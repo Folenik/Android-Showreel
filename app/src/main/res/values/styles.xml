@@ -1,0 +1,33 @@
+<resources>
+
+    <style name="ShowreelLabel">
+        <item name="android:textSize">@dimen/textSize12</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="ShowreelLabel.Header">
+        <item name="android:paddingLeft">@dimen/spacing16</item>
+        <item name="android:paddingRight">@dimen/spacing16</item>
+        <item name="android:paddingTop">@dimen/spacing16</item>
+        <item name="android:paddingBottom">@dimen/spacing16</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:ellipsize">none</item>
+    </style>
+
+    <style name="ShowreelLabel.Long">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:ellipsize">none</item>
+    </style>
+
+    <style name="ShowreelLabel.Long.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ShowreelLabel.Long.Italic">
+        <item name="android:textStyle">italic</item>
+    </style>
+
+</resources>

@@ -1,0 +1,28 @@
+buildscript {
+    apply from: 'versions.gradle'
+
+    repositories {
+        google()
+        jcenter()
+        
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$toolVersions.android.gradlePlugin"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = "${toolVersions.wrapper}"
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

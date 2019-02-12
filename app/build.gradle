@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion toolVersions.android.compileSdk
+    buildToolsVersion toolVersions.android.buildTools
+
+    defaultConfig {
+        applicationId "com.folen.androidshowreel"
+        minSdkVersion toolVersions.android.minSdk
+        targetSdkVersion toolVersions.android.targetSdk
+        versionCode projectVersions.versionCode.toInteger()
+        versionName projectVersions.versionName
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            debuggable false
+        }
+        developer {
+            initWith(release)
+            applicationIdSuffix ".dev"
+            debuggable true
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation "com.android.support:appcompat-v7:$libVersions.support"
+    implementation "com.android.support.constraint:constraint-layout:$libVersions.constraint"
+    implementation "com.android.support:design:$libVersions.support"
+}
