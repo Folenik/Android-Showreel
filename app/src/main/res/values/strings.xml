@@ -2,7 +2,6 @@
     <string name="app_name">Android Showreel</string>
 
     <!-- RecyclerView setup -->
-    <string name="list_image_description">Graphic representation</string>
     <string name="list_item_name">Name</string>
     <string name="list_item_description">Description</string>
 

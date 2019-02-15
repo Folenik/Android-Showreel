@@ -1,5 +1,7 @@
 package com.folen.androidshowreel.model;
 
+import android.content.Intent;
+import android.support.annotation.DrawableRes;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.AppCompatTextView;
 import android.view.View;
@@ -9,21 +11,44 @@ import com.mikepenz.fastadapter.FastAdapter;
 import com.mikepenz.fastadapter.items.AbstractItem;
 import java.util.List;
 
-public class Features extends AbstractItem<Features, Features.ViewHolder> {
+public class FeatureListItem extends AbstractItem<FeatureListItem, FeatureListItem.ViewHolder> {
 
-    public String name;
-    public String description;
-    public int image;
+    private static final int NULL_IMAGE = 0;
+    private String name, description;
+    private Intent intent;
+    private int image;
 
-    public Features(String name, String description, int image) {
+
+    public FeatureListItem(Feature feature) {
+    }
+
+    public class Feature(String name, String description, @DrawableRes int image, Intent intent) {
         this.name = name;
         this.description = description;
         this.image = image;
+        this.intent = intent;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public int getImage {
+        return image;
+    }
+
+    public Intent getIntent() {
+        return intent;
+    }
+
 
     @Override
     public int getType() {
-        return R.id.list_card;
+        return R.id.list_item_layout;
     }
 
     @Override
@@ -36,10 +61,9 @@ public class Features extends AbstractItem<Features, Features.ViewHolder> {
         return new ViewHolder(v);
     }
 
-    protected static class ViewHolder extends FastAdapter.ViewHolder<Features> {
+    protected static class ViewHolder extends FastAdapter.ViewHolder<FeatureListItem> {
         View view;
-        AppCompatTextView name;
-        AppCompatTextView description;
+        AppCompatTextView name, description;
         ImageView image;
 
         public ViewHolder(View view) {
@@ -51,17 +75,17 @@ public class Features extends AbstractItem<Features, Features.ViewHolder> {
         }
 
         @Override
-        public void bindView(@NonNull Features item, @NonNull List<Object> payloads) {
+        public void bindView(@NonNull FeatureListItem item, @NonNull List<Object> payloads) {
             name.setText(item.name);
             description.setText(item.description);
             image.setImageResource(item.image);
         }
 
         @Override
-        public void unbindView(@NonNull Features item) {
+        public void unbindView(@NonNull FeatureListItem item) {
             name.setText(null);
             description.setText(null);
-            image.setImageResource(0);
+            image.setImageResource(NULL_IMAGE);
         }
     }
 }
