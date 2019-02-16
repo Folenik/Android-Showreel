@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Android Showreel</string>
+
+    <string name="list_item_name">Name</string>
+    <string name="list_item_description">Description</string>
+    <string name="error_list_loading">Error occurred on loading list process.</string>
+    <string name="error_not_implemented">Sorry! This feature is currently not implemented</string>
 </resources>

@@ -6,11 +6,16 @@
     <dimen name="textSize14">14sp</dimen>
     <dimen name="textSize16">16sp</dimen>
     <dimen name="textSize20">20sp</dimen>
+    <dimen name="textSize24">24sp</dimen>
+    <dimen name="textSize32">32sp</dimen>
 
+    <dimen name="spacing4">4sp</dimen>
+    <dimen name="spacing5">5sp</dimen>
     <dimen name="spacing8">8sp</dimen>
     <dimen name="spacing16">16sp</dimen>
     <dimen name="spacing24">24sp</dimen>
     <dimen name="spacing32">32sp</dimen>
     <dimen name="spacing48">48sp</dimen>
+    <dimen name="spacing60">60sp</dimen>
     <dimen name="spacing64">64sp</dimen>
 </resources>
