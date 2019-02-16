@@ -1,25 +1,8 @@
 <resources>
     <string name="app_name">Android Showreel</string>
 
-    <!-- RecyclerView setup -->
     <string name="list_item_name">Name</string>
     <string name="list_item_description">Description</string>
-
-    <!-- All strings from RecyclerView -->
-    <string name="list_data_pass">Intent data passing</string>
-    <string name="list_data_pass_description">Description about data passing.</string>
-    <string name="list_fragments">Fragments</string>
-    <string name="list_fragments_description">Description about fragments.</string>
-    <string name="list_dialogs">Dialogs</string>
-    <string name="list_dialogs_description">Description about dialogs.</string>
-    <string name="list_bottomnavigation">BottomNavigation</string>
-    <string name="list_bottomnavigation_description">Description about BottomNavigation.</string>
-    <string name="list_bottomsheetfragment">BottomSheetFragment</string>
-    <string name="list_bottomshettfragment_description">Description about BottomSheetFragment.</string>
-    <string name="list_googlemaps">GoogleMaps</string>
-    <string name="list_googlemaps_description">Description about GoogleMaps.</string>
-    <string name="list_taking_photos">Taking photos</string>
-    <string name="list_taking_photos_description">Description about taking photos.</string>
-    <string name="list_qrcode_scanner">QR Code scanner</string>
-    <string name="list_qrcode_scanner_description">Description about QR Code scanner.</string>
+    <string name="error_list_loading">Error occurred on loading list process.</string>
+    <string name="error_not_implemented">Sorry! This feature is currently not implemented</string>
 </resources>

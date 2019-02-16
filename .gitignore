@@ -203,7 +203,11 @@ cmake-build-*/
 .idea/sonarlint
 
 #Gradle wrapper folder
-.gradle/wrapper/*
+gradle/**/gradle-wrapper.jar
+gradle/**/gradle-wrapper.properties
+gradle/*
+gradlew
+gradlew.bat
 
 #Idea folder
 .idea/*

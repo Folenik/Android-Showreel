@@ -35,4 +35,9 @@
         <item name="android:textSize">@dimen/textSize16</item>
     </style>
 
+    <style name="ShowreelImage">
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
 </resources>
