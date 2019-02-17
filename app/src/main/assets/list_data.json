@@ -7,8 +7,8 @@
   },
   {
     "id": 1,
-    "name": "Intent data passin",
-    "description": "Description about data passing.",
+    "name": "Dependency Injection",
+    "description": "Description about Dependency Injection.",
     "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
   },
   {
@@ -51,6 +51,186 @@
     "id": 8,
     "name": "QR Code scanner",
     "description": "Description about QR Code scanner.",
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Intent data passing - Serializable & Parcelable",
+    "description": "Description about Intent data passing - Serializable & Parcelable.",
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Loading image from gallery",
+    "description": "Description about Loading image from gallery.",
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Gesture detector",
+    "description": "Description about Gesture detector.",
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Basic Animations",
+    "description": "Description about Animations.",
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Fragment translations",
+    "description": "Description about Fragment translations.",
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
+  },
+  {
+    "id": 14,
+    "name": "ViewPager & Indicator",
+    "description": "Description about ViewPager & Indicator.",
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Sliding registration form",
+    "description": "Description about Sliding registration form.",
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
+  },
+  {
+    "id": 16,
+    "name": "FCM",
+    "description": "Description about FCM.",
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Snackbar",
+    "description": "Description about Snackbar.",
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Simple REST API with RestClient",
+    "description": "Description about Simple REST API with RestClient.",
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Live permissions",
+    "description": "Description about Live permissions.",
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Rx streams",
+    "description": "Description about Rx streams.",
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
+  },
+  {
+    "id": 21,
+    "name": "AutoCompleteEditText",
+    "description": "Description about AutoCompleteEditText",
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Broadcast Receiver",
+    "description": "Description about Broadcast Receiver.",
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Local notifications",
+    "description": "Description about Local notifications.",
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
+  },
+  {
+    "id": 24,
+    "name": "WebView + JS",
+    "description": "Description about WebView + JS.",
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
+  },
+  {
+    "id": 25,
+    "name": "TextInputLayout",
+    "description": "Description about TextInputLayout.",
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
+  },
+  {
+    "id": 26,
+    "name": "ViewModel",
+    "description": "Description about ViewModel.",
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
+  },
+  {
+    "id": 27,
+    "name": "Complex view with merge tag",
+    "description": "Description about Complex view with merge tag.",
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
+  },
+  {
+    "id": 28,
+    "name": "Operations on threads",
+    "description": "Description about Operations on threads.",
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
+  },
+  {
+    "id": 29,
+    "name": "Spannable",
+    "description": "Description about Spannable.",
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
+  },
+  {
+    "id": 30,
+    "name": "multiple language app",
+    "description": "Description about multiple language app.",
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
+  },
+  {
+    "id": 31,
+    "name": "SharedPreferences",
+    "description": "Description about SharedPreferences.",
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
+  },
+  {
+    "id": 32,
+    "name": "Services",
+    "description": "Description about Services.",
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
+  },
+  {
+    "id": 33,
+    "name": "Kotlin",
+    "description": "Description about Kotlin.",
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
+  },
+  {
+    "id": 34,
+    "name": "Fragments backstack",
+    "description": "Description about Fragments backstack.",
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
+  },
+  {
+    "id": 35,
+    "name": "Configuration change",
+    "description": "Description about Configuration change.",
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
+  },
+  {
+    "id": 36,
+    "name": "Motion sensors",
+    "description": "Description about Motion sensors.",
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
+  },
+  {
+    "id": 37,
+    "name": "Bitmaps",
+    "description": "Description about Bitmaps.",
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
+  },
+  {
+    "id": 37,
+    "name": "DataBinding",
+    "description": "Description about DataBinding.",
     "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
   }
 ]

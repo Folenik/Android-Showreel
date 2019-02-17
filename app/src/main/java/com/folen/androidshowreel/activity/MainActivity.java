@@ -26,11 +26,10 @@ import static com.folen.androidshowreel.util.Const.LIST_JSON_NAME;
 
 public class MainActivity extends BaseActivity {
 
-    RecyclerView recyclerView;
+    private RecyclerView recyclerView;
 
     private ItemAdapter<FeatureListItem> itemAdapter = new ItemAdapter<>();
     private FastAdapter<FeatureListItem> fastAdapter = FastAdapter.with(itemAdapter);
-
     private List<Feature> featureList = new ArrayList<>();
 
     @Override
@@ -60,7 +59,7 @@ public class MainActivity extends BaseActivity {
         });
     }
 
-    public void setupRecyclerView() {
+    private void setupRecyclerView() {
         recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);
@@ -94,7 +93,7 @@ public class MainActivity extends BaseActivity {
         Toast.makeText(this, getString(R.string.error_list_loading), Toast.LENGTH_SHORT).show();
     }
 
-    public void addItems() {
+    private void addItems() {
         for (Feature feature : featureList) {
             itemAdapter.add(new FeatureListItem(feature));
         }

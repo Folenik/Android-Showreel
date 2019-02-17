@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.widget.Toast;
 
 import com.folen.androidshowreel.R;
+import com.folen.androidshowreel.activity.ConstraintLayoutActivity;
 import com.folen.androidshowreel.model.Feature;
 
 public class IntentManager {
@@ -15,7 +16,7 @@ public class IntentManager {
         switch (feature.getId()) {
             case 0:
                 //TODO
-                Toast.makeText(context, context.getString(R.string.error_not_implemented), Toast.LENGTH_SHORT).show();
+                new Intent(context, ConstraintLayoutActivity.class);
             case 1:
                 //TODO
                 Toast.makeText(context, context.getString(R.string.error_not_implemented), Toast.LENGTH_SHORT).show();
