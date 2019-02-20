@@ -6,6 +6,10 @@
         <item name="android:ellipsize">end</item>
     </style>
 
+    <style name="ShowreelLabel.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
     <style name="ShowreelLabel.Header">
         <item name="android:paddingLeft">@dimen/spacing16</item>
         <item name="android:paddingRight">@dimen/spacing16</item>
@@ -16,11 +20,43 @@
         <item name="android:ellipsize">none</item>
     </style>
 
+    <style name="ShowreelLabel.Header.Huge">
+        <item name="android:textSize">@dimen/textSize36</item>
+    </style>
+
+    <style name="ShowreelLabel.White.ButtonTextBig">
+        <item name="android:paddingLeft">@dimen/spacing32</item>
+        <item name="android:paddingRight">@dimen/spacing32</item>
+        <item name="android:paddingTop">@dimen/spacing32</item>
+        <item name="android:paddingBottom">@dimen/spacing32</item>
+    </style>
+
+    <style name="ShowreelLabel.White.ButtonTextSmall">
+        <item name="android:paddingLeft">@dimen/spacing8</item>
+        <item name="android:paddingRight">@dimen/spacing8</item>
+        <item name="android:paddingTop">@dimen/spacing8</item>
+        <item name="android:paddingBottom">@dimen/spacing8</item>
+    </style>
+
     <style name="ShowreelLabel.Long">
         <item name="android:textColor">@color/black</item>
         <item name="android:singleLine">false</item>
         <item name="android:ellipsize">none</item>
         <item name="android:textSize">@dimen/textSize24</item>
+    </style>
+
+    <style name="ShowreelLabel.LongNoColor">
+        <item name="android:singleLine">false</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:textSize">@dimen/textSize16</item>
+    </style>
+
+    <style name="ShowreelLabel.Long.Small">
+        <item name="android:textSize">@dimen/textSize14</item>
+    </style>
+
+    <style name="ShowreelLabel.Long.Small.Colored">
+        <item name="android:textColor">@color/classified_button</item>
     </style>
 
     <style name="ShowreelLabel.Long.Bold">

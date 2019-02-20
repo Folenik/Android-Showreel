@@ -8,14 +8,27 @@
     <dimen name="textSize20">20sp</dimen>
     <dimen name="textSize24">24sp</dimen>
     <dimen name="textSize32">32sp</dimen>
+    <dimen name="textSize36">36sp</dimen>
 
     <dimen name="spacing4">4sp</dimen>
     <dimen name="spacing5">5sp</dimen>
+    <dimen name="spacing6">6sp</dimen>
     <dimen name="spacing8">8sp</dimen>
+    <dimen name="spacing12">12sp</dimen>
     <dimen name="spacing16">16sp</dimen>
+    <dimen name="spacing20">20sp</dimen>
     <dimen name="spacing24">24sp</dimen>
     <dimen name="spacing32">32sp</dimen>
     <dimen name="spacing48">48sp</dimen>
     <dimen name="spacing60">60sp</dimen>
     <dimen name="spacing64">64sp</dimen>
+    <dimen name="spacing80">80sp</dimen>
+    <dimen name="spacing96">96sp</dimen>
+    <dimen name="spacing104">104sp</dimen>
+    <dimen name="spacing108">108sp</dimen>
+    <dimen name="spacing110">110sp</dimen>
+    <dimen name="spacing120">120sp</dimen>
+    <dimen name="spacing128">128sp</dimen>
+    <dimen name="spacing140">140sp</dimen>
+    <dimen name="spacing256">256sp</dimen>
 </resources>

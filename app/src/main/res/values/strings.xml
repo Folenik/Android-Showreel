@@ -5,4 +5,20 @@
     <string name="list_item_description">Description</string>
     <string name="error_list_loading">Error occurred on loading list process.</string>
     <string name="error_not_implemented">Sorry! This feature is currently not implemented</string>
+    <string name="button_explore">Explore</string>
+    <string name="button_motors">Motors</string>
+    <string name="button_classified">Classified</string>
+    <string name="button_services">Services</string>
+    <string name="button_properties">Properties</string>
+    <string name="button_jobs">Jobs</string>
+    <string name="constraint_menu_1">1</string>
+    <string name="constraint_menu_2">2</string>
+    <string name="constraint_menu_3">3</string>
+    <string name="constraint_menu_4">4</string>
+    <string name="constraint_menu_5">5</string>
+    <string name="constraint_item_name">Popular Trending</string>
+    <string name="constraint_item_view">View all</string>
+    <string name="constraint_value">Play Station</string>
+
+
 </resources>

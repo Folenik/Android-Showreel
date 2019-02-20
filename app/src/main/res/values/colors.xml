@@ -8,5 +8,12 @@
     <color name="secondaryTextColor">#1f1f1f</color>
 
     <color name="white">#ffffff</color>
+    <color name="almost_white">#fafafa</color>
     <color name="black">#000000</color>
+
+    <color name="motors_button">#fc7381</color>
+    <color name="classified_button">#1ad08e</color>
+    <color name="services_button">#fc7b47</color>
+    <color name="properties_button">#48ccdc</color>
+    <color name="jobs_button">#edb16a</color>
 </resources>

@@ -15,8 +15,7 @@ public class IntentManager {
     public static Intent getIntentForFeature(Context context, Feature feature) {
         switch (feature.getId()) {
             case 0:
-                //TODO
-                new Intent(context, ConstraintLayoutActivity.class);
+                return ConstraintLayoutActivity.intent(context);
             case 1:
                 //TODO
                 Toast.makeText(context, context.getString(R.string.error_not_implemented), Toast.LENGTH_SHORT).show();
