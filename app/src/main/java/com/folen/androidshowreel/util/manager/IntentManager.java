@@ -7,6 +7,7 @@ import android.widget.Toast;
 
 import com.folen.androidshowreel.R;
 import com.folen.androidshowreel.activity.ConstraintLayoutActivity;
+import com.folen.androidshowreel.activity.QRCodeActivity;
 import com.folen.androidshowreel.model.Feature;
 
 public class IntentManager {
@@ -37,6 +38,9 @@ public class IntentManager {
             case 7:
                 //TODO
                 Toast.makeText(context, context.getString(R.string.error_not_implemented), Toast.LENGTH_SHORT).show();
+            case 8:
+                //TODO
+                return QRCodeActivity.intent(context);
             default:
                 return null;
         }
