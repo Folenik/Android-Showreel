@@ -3,10 +3,12 @@ package com.folen.androidshowreel.util.manager;
 import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.widget.Toast;
 
 import com.folen.androidshowreel.R;
 import com.folen.androidshowreel.activity.ConstraintLayoutActivity;
+import com.folen.androidshowreel.activity.FragmentActivity;
 import com.folen.androidshowreel.activity.QRCodeActivity;
 import com.folen.androidshowreel.model.Feature;
 
@@ -21,8 +23,7 @@ public class IntentManager {
                 //TODO
                 Toast.makeText(context, context.getString(R.string.error_not_implemented), Toast.LENGTH_SHORT).show();
             case 2:
-                //TODO
-                Toast.makeText(context, context.getString(R.string.error_not_implemented), Toast.LENGTH_SHORT).show();
+                return FragmentActivity.intent(context);
             case 3:
                 //TODO
                 Toast.makeText(context, context.getString(R.string.error_not_implemented), Toast.LENGTH_SHORT).show();

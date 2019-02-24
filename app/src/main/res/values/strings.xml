@@ -19,6 +19,12 @@
     <string name="constraint_item_name">Popular Trending</string>
     <string name="constraint_item_view">View all</string>
     <string name="constraint_value">Play Station</string>
+    <string name="all_items">All items</string>
+    <string name="done_items">Done items</string>
+    <string name="todo_items">TODO items</string>
+    <string name="add_fragment">Add</string>
+    <string name="replace_fragment">Replace</string>
+    <string name="remove_fragment">Remove</string>
 
 
 </resources>

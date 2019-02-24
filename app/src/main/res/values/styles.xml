@@ -68,6 +68,8 @@
     </style>
 
     <style name="ShowreelLabel.Long.Italic.Small">
+        <item name="android:singleLine">false</item>
+        <item name="android:ellipsize">none</item>
         <item name="android:textSize">@dimen/textSize16</item>
     </style>
 

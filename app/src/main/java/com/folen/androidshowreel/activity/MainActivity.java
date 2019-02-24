@@ -3,11 +3,12 @@ package com.folen.androidshowreel.activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.widget.AppCompatCheckBox;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 import android.widget.Toast;
-
 import com.folen.androidshowreel.R;
 import com.folen.androidshowreel.base.BaseActivity;
 import com.folen.androidshowreel.model.Feature;
@@ -25,13 +26,15 @@ import java.util.List;
 import static com.folen.androidshowreel.util.Const.DEFAULT_ANIMATION_DURATION;
 import static com.folen.androidshowreel.util.Const.LIST_JSON_NAME;
 
-public class MainActivity extends BaseActivity {
+public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     private RecyclerView recyclerView;
 
     private ItemAdapter<FeatureListItem> itemAdapter = new ItemAdapter<>();
     private FastAdapter<FeatureListItem> fastAdapter = FastAdapter.with(itemAdapter);
     private List<Feature> featureList = new ArrayList<>();
+
+    private AppCompatCheckBox checkboxAll, checkboxDone, checkboxTODO;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,10 +47,26 @@ public class MainActivity extends BaseActivity {
     private void init() {
         setupAdapter();
         setupRecyclerView();
+        setupCheckboxes();
         if (loadListWithResult()) {
             addItems();
         }
     }
+
+    private void setupCheckboxes() {
+        checkboxAll = findViewById(R.id.checkbox_all);
+        checkboxDone = findViewById(R.id.checkbox_done);
+        checkboxTODO = findViewById(R.id.checkbox_todo);
+
+        checkboxAll.setOnClickListener(this);
+        checkboxDone.setOnClickListener(this);
+        checkboxTODO.setOnClickListener(this);
+
+        checkboxAll.setChecked(true);
+        checkboxDone.setChecked(false);
+        checkboxTODO.setChecked(false);
+    }
+
 
     private void setupAdapter() {
         fastAdapter.withOnClickListener((v, adapter, item, position) -> {
@@ -100,4 +119,44 @@ public class MainActivity extends BaseActivity {
         }
     }
 
+    private void setOnCheckedChanges() {
+        itemAdapter.clear();
+
+        if (checkboxAll.isChecked()) {
+            for (Feature feature : featureList) {
+                itemAdapter.add(new FeatureListItem(feature));
+            }
+        } else if (checkboxDone.isChecked()) {
+            for (Feature feature : featureList) {
+                if (feature.isDone() == true) {
+                    itemAdapter.add(new FeatureListItem(feature));
+                }
+            }
+
+        } else if (checkboxTODO.isChecked()) {
+            for (Feature feature : featureList) {
+                if (feature.isDone() == false) {
+                    itemAdapter.add(new FeatureListItem(feature));
+                }
+            }
+        }
+    }
+
+    @Override
+    public void onClick(View view) {
+        if (view == checkboxAll) {
+            checkboxDone.setChecked(false);
+            checkboxTODO.setChecked(false);
+        }
+        if (view == checkboxDone) {
+            checkboxAll.setChecked(false);
+            checkboxTODO.setChecked(false);
+        }
+        if (view == checkboxTODO) {
+            checkboxAll.setChecked(false);
+            checkboxDone.setChecked(false);
+        }
+
+        setOnCheckedChanges();
+    }
 }
