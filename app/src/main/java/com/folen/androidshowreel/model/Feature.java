@@ -12,12 +12,15 @@ public class Feature {
     private String description;
     @SerializedName("img")
     private String imageUrl;
+    @SerializedName("isdone")
+    private boolean isDone;
 
-    public Feature(Integer id, String name, String description, String imageUrl) {
+    public Feature(Integer id, String name, String description, String imageUrl, boolean isDone) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.imageUrl = imageUrl;
+        this.isDone = isDone;
     }
 
     public Integer getId() {
@@ -35,4 +38,6 @@ public class Feature {
     public String getImageUrl() {
         return imageUrl;
     }
+
+    public boolean isDone() { return isDone; }
 }
