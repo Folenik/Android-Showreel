@@ -1,10 +1,8 @@
 package com.folen.androidshowreel.util.listItems;
 
 import android.content.Context;
-import android.graphics.Paint;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.AppCompatTextView;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -13,9 +11,6 @@ import com.folen.androidshowreel.model.Feature;
 import com.folen.androidshowreel.util.manager.ImageManager;
 import com.mikepenz.fastadapter.FastAdapter;
 import com.mikepenz.fastadapter.items.AbstractItem;
-
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import static com.folen.androidshowreel.util.Const.ZERO;
@@ -66,7 +61,6 @@ public class FeatureListItem extends AbstractItem<FeatureListItem, FeatureListIt
 
         @Override
         public void bindView(@NonNull FeatureListItem item, @NonNull List<Object> payloads) {
-
             name.setText(item.feature.getName());
             description.setText(item.feature.getDescription());
             ImageManager.setupImageWithUrl(context, image, item.feature.getImageUrl());

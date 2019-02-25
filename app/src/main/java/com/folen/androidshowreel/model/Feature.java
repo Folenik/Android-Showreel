@@ -12,7 +12,7 @@ public class Feature {
     private String description;
     @SerializedName("img")
     private String imageUrl;
-    @SerializedName("isdone")
+    @SerializedName("isDone")
     private boolean isDone;
 
     public Feature(Integer id, String name, String description, String imageUrl, boolean isDone) {
