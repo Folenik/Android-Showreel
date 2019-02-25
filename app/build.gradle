@@ -61,5 +61,5 @@ dependencies {
     implementation "com.github.bumptech.glide:glide:$libVersions.glide"
     annotationProcessor "com.github.bumptech.glide:compiler:$libVersions.glide"
     implementation "com.google.android.gms:play-services:$libVersions.playServices"
-    implementation 'me.dm7.barcodescanner:zxing:1.9.8'
+    implementation "me.dm7.barcodescanner:zxing:$libVersions.zxingScanner"
 }

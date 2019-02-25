@@ -39,7 +39,6 @@ public class IntentManager {
                 //TODO
                 Toast.makeText(context, context.getString(R.string.error_not_implemented), Toast.LENGTH_SHORT).show();
             case 8:
-                //TODO
                 return QRCodeActivity.intent(context);
             default:
                 return null;
