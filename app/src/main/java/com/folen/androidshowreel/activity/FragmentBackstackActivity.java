@@ -15,7 +15,7 @@ import com.folen.androidshowreel.base.BaseActivity;
 import com.folen.androidshowreel.util.FirstFragment;
 import com.folen.androidshowreel.util.SecondFragment;
 
-public class FragmentActivity extends BaseActivity {
+public class FragmentBackstackActivity extends BaseActivity {
 
     private Toolbar mToolbar;
     private Fragment fragment;
@@ -23,7 +23,7 @@ public class FragmentActivity extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fragment);
+        setContentView(R.layout.activity_backstack_fragment);
 
         setupToolbar();
     }
@@ -31,13 +31,13 @@ public class FragmentActivity extends BaseActivity {
     private void setupToolbar() {
         mToolbar = findViewById(R.id.fragment_toolbar);
         setSupportActionBar(mToolbar);
-        mToolbar.setTitle("Fragments");
+        mToolbar.setTitle("Fragments Backstack");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.toolbar_menu, menu);
+        getMenuInflater().inflate(R.menu.toolbar_menu_backstack, menu);
         return true;
     }
 
@@ -51,6 +51,14 @@ public class FragmentActivity extends BaseActivity {
             case R.id.action_replace:
                 fragment = new SecondFragment();
                 replaceFragment(fragment);
+                break;
+            case R.id.action_add_backstack:
+                fragment = new FirstFragment();
+                addFragmentWithBackStack(fragment);
+                break;
+            case R.id.action_replace_backstack:
+                fragment = new SecondFragment();
+                replaceFragmentWithBackStack(fragment);
                 break;
             case R.id.action_remove:
                 removeFragment(fragment);
@@ -74,6 +82,20 @@ public class FragmentActivity extends BaseActivity {
         fragmentTransaction.commit();
     }
 
+    public void addFragmentWithBackStack(Fragment fragment) {
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.add(R.id.fragment_content, fragment);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
+    }
+
+    public void replaceFragmentWithBackStack(Fragment fragment) {
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.fragment_content, fragment);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
+    }
+
     public void removeFragment(Fragment fragment) {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.remove(fragment);
@@ -81,6 +103,11 @@ public class FragmentActivity extends BaseActivity {
     }
 
     public static Intent intent(Context context) {
-        return new Intent(context, FragmentActivity.class);
+        return new Intent(context, FragmentBackstackActivity.class);
+    }
+
+    @Override
+    public void onBackPressed(){
+        getSupportFragmentManager().popBackStack();
     }
 }

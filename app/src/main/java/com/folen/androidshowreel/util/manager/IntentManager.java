@@ -6,7 +6,7 @@ import android.support.annotation.Nullable;
 import android.widget.Toast;
 
 import com.folen.androidshowreel.R;
-import com.folen.androidshowreel.activity.FragmentActivity;
+import com.folen.androidshowreel.activity.FragmentBackstackActivity;
 import com.folen.androidshowreel.model.Feature;
 
 public class IntentManager {
@@ -21,7 +21,8 @@ public class IntentManager {
                 //TODO
                 Toast.makeText(context, context.getString(R.string.error_not_implemented), Toast.LENGTH_SHORT).show();
             case 2:
-                return FragmentActivity.intent(context);
+                //TODO
+                Toast.makeText(context, context.getString(R.string.error_not_implemented), Toast.LENGTH_SHORT).show();
             case 3:
                 //TODO
                 Toast.makeText(context, context.getString(R.string.error_not_implemented), Toast.LENGTH_SHORT).show();
@@ -37,6 +38,8 @@ public class IntentManager {
             case 7:
                 //TODO
                 Toast.makeText(context, context.getString(R.string.error_not_implemented), Toast.LENGTH_SHORT).show();
+            case 34:
+                return FragmentBackstackActivity.intent(context);
             default:
                 return null;
         }

@@ -8,4 +8,6 @@
     <string name="add_fragment">Add</string>
     <string name="replace_fragment">Replace</string>
     <string name="remove_fragment">Remove</string>
+    <string name="add_fragment_backstack">Add with backstack</string>
+    <string name="replace_fragment_backstack">Replace with backstack</string>
 </resources>

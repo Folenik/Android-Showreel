@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".activity.FragmentActivity">
+    tools:context=".activity.FragmentBackstackActivity">
 
     <item
         android:id="@+id/action_add"
@@ -12,6 +12,16 @@
     <item
         android:id="@+id/action_replace"
         android:title="@string/replace_fragment"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_add_backstack"
+        android:title="@string/add_fragment_backstack"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_replace_backstack"
+        android:title="@string/replace_fragment_backstack"
         app:showAsAction="never" />
 
     <item
