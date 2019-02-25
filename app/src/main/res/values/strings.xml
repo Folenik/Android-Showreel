@@ -5,4 +5,7 @@
     <string name="list_item_description">Description</string>
     <string name="error_list_loading">Error occurred on loading list process.</string>
     <string name="error_not_implemented">Sorry! This feature is currently not implemented</string>
+    <string name="add_fragment">Add</string>
+    <string name="replace_fragment">Replace</string>
+    <string name="remove_fragment">Remove</string>
 </resources>
