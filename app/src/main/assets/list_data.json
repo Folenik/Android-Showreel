@@ -52,5 +52,11 @@
     "name": "QR Code scanner",
     "description": "Description about QR Code scanner.",
     "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Fragment translations",
+    "description": "Description about Fragment translations.",
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
   }
 ]

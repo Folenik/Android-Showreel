@@ -5,7 +5,13 @@
     <string name="list_item_description">Description</string>
     <string name="error_list_loading">Error occurred on loading list process.</string>
     <string name="error_not_implemented">Sorry! This feature is currently not implemented</string>
-    <string name="add_fragment">Add</string>
-    <string name="replace_fragment">Replace</string>
-    <string name="remove_fragment">Remove</string>
+    <string name="fragment_first_anim">This is first animated fragment</string>
+    <string name="fragment_second_anim">This is second animated fragment</string>
+    <string name="fragment_third_anim">This is third animated fragment</string>
+    <string name="add_fragment_anim_fadein">Add (FadeIn)</string>
+    <string name="replace_fragment_anim_fadein">Replace (FadeIn)</string>
+    <string name="add_fragment_anim_right">Add (Left to Right)</string>
+    <string name="replace_fragment_anim_right">Replace (Left to right)</string>
+    <string name="remove_fragment_anim_fadeout">Remove (FadeOut)</string>
+    <string name="remove_fragment_anim_left">Remove (Right to left)</string>
 </resources>

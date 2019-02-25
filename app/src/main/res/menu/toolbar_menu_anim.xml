@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.FragmentTranslationActivity">
+
+    <item
+        android:id="@+id/action_add_fadein"
+        android:title="@string/add_fragment_anim_fadein"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_replace_fadein"
+        android:title="@string/replace_fragment_anim_fadein"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_add_right"
+        android:title="@string/add_fragment_anim_right"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_replace_right"
+        android:title="@string/replace_fragment_anim_right"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_remove_fadeout"
+        android:title="@string/remove_fragment_anim_fadeout"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_remove_left"
+        android:title="@string/remove_fragment_anim_left"
+        app:showAsAction="never" />
+
+</menu>
