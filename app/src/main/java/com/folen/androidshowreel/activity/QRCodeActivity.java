@@ -11,6 +11,8 @@ import com.folen.androidshowreel.base.BaseActivity;
 import com.google.zxing.Result;
 
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
+import static com.folen.androidshowreel.util.Const.QR_CODE_NAME;
+import static com.folen.androidshowreel.util.Const.QR_CODE_NEVER_SCANNED;
 
 public class QRCodeActivity extends BaseActivity implements ZXingScannerView.ResultHandler {
 
@@ -37,7 +39,7 @@ public class QRCodeActivity extends BaseActivity implements ZXingScannerView.Res
         mScannerView = new ZXingScannerView(this);
         contentFrame.addView(mScannerView);
         toolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
-        toolbar.setTitle("QR CODE never scanned");
+        toolbar.setTitle(QR_CODE_NEVER_SCANNED);
     }
 
     @Override
@@ -55,7 +57,7 @@ public class QRCodeActivity extends BaseActivity implements ZXingScannerView.Res
 
     @Override
     public void handleResult(Result rawResult) {
-        toolbar.setTitle("QR CODE: " + rawResult.getText());
+        toolbar.setTitle(QR_CODE_NAME + rawResult.getText());
         mScannerView.resumeCameraPreview(this);
     }
 }
