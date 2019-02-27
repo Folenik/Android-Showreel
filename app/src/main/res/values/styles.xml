@@ -55,10 +55,6 @@
         <item name="android:textSize">@dimen/textSize14</item>
     </style>
 
-    <style name="ShowreelLabel.Long.Small.Colored">
-        <item name="android:textColor">@color/classified_button</item>
-    </style>
-
     <style name="ShowreelLabel.Long.Bold">
         <item name="android:textStyle">bold</item>
     </style>
