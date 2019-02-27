@@ -18,8 +18,15 @@
     <FrameLayout
         android:id="@+id/qr_content"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/qr_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/qr_toolbar">
-    </FrameLayout>
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/ShowreelLabel.Long"
+        />
+
 </android.support.constraint.ConstraintLayout>
