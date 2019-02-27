@@ -29,6 +29,7 @@
         <item name="android:paddingRight">@dimen/spacing32</item>
         <item name="android:paddingTop">@dimen/spacing32</item>
         <item name="android:paddingBottom">@dimen/spacing32</item>
+        <item name="android:textAllCaps">false</item>
     </style>
 
     <style name="ShowreelLabel.White.ButtonTextSmall">
@@ -36,6 +37,7 @@
         <item name="android:paddingRight">@dimen/spacing8</item>
         <item name="android:paddingTop">@dimen/spacing8</item>
         <item name="android:paddingBottom">@dimen/spacing8</item>
+        <item name="android:textAllCaps">false</item>
     </style>
 
     <style name="ShowreelLabel.Long">
