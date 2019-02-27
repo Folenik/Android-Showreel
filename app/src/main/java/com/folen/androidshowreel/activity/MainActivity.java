@@ -100,8 +100,7 @@ public class MainActivity extends BaseActivity {
                 checkboxTodo.setChecked(false);
                 checkboxAll.setChecked(true);
                 filterListBy(FeatureRealization.ALL.getType());
-            }
-            else {
+            } else {
                 checkboxAll.setChecked(false);
                 filterListBy(FeatureRealization.DONE.getType());
             }
@@ -112,8 +111,7 @@ public class MainActivity extends BaseActivity {
                 checkboxTodo.setChecked(false);
                 checkboxAll.setChecked(true);
                 filterListBy(FeatureRealization.ALL.getType());
-            }
-            else {
+            } else {
                 checkboxAll.setChecked(false);
                 filterListBy(FeatureRealization.TODO.getType());
             }
@@ -141,14 +139,13 @@ public class MainActivity extends BaseActivity {
         itemAdapter.getItemFilter().withFilterPredicate(new IItemAdapter.Predicate<FeatureListItem>() {
             @Override
             public boolean filter(FeatureListItem feature, CharSequence constraint) {
-                if (constraint == FeatureRealization.ALL.getType()) {
-                    return true;
-                } else if (constraint == FeatureRealization.DONE.getType()) {
+                if (constraint == FeatureRealization.DONE.getType()) {
                     return feature.getFeature().isDone();
                 } else if (constraint == FeatureRealization.TODO.getType()) {
                     return !feature.getFeature().isDone();
+                } else {
+                    return true;
                 }
-                return true;
             }
         });
     }
