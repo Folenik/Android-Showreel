@@ -26,6 +26,9 @@ import java.util.List;
 
 import static com.folen.androidshowreel.util.Const.DEFAULT_ANIMATION_DURATION;
 import static com.folen.androidshowreel.util.Const.LIST_JSON_NAME;
+import static com.folen.androidshowreel.util.Const.FEATURE_REALIZATION_ALL;
+import static com.folen.androidshowreel.util.Const.FEATURE_REALIZATION_DONE;
+import static com.folen.androidshowreel.util.Const.FEATURE_REALIZATION_TODO;
 
 public class MainActivity extends BaseActivity {
 
@@ -42,7 +45,16 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        initViews();
         init();
+    }
+
+    private void initViews() {
+        checkboxAll = findViewById(R.id.checkbox_all);
+        checkboxDone = findViewById(R.id.checkbox_done);
+        checkboxTodo = findViewById(R.id.checkbox_todo);
+
+        recyclerView = findViewById(R.id.recycler_view);
     }
 
     private void init() {
@@ -54,39 +66,66 @@ public class MainActivity extends BaseActivity {
         }
     }
 
-    private void setupCheckboxes() {
-        checkboxAll = findViewById(R.id.checkbox_all);
-        checkboxDone = findViewById(R.id.checkbox_done);
-        checkboxTodo = findViewById(R.id.checkbox_todo);
+    public enum FeatureRealization {
 
-        View.OnClickListener onClickListener = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (v == checkboxAll) {
+        ALL(FEATURE_REALIZATION_ALL),
+        DONE(FEATURE_REALIZATION_DONE),
+        TODO(FEATURE_REALIZATION_TODO);
+
+        private final String type;
+
+        FeatureRealization(String type) {
+            this.type = type;
+        }
+
+        public String getType() {
+            return type;
+        }
+    }
+
+    private void setupCheckboxes() {
+        checkboxAll.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (checkboxTodo.isChecked() || checkboxDone.isChecked()) {
+                if (isChecked) {
                     checkboxDone.setChecked(false);
                     checkboxTodo.setChecked(false);
-                    itemAdapter.filter("all");
-                }
-                if (v == checkboxDone) {
-                    checkboxAll.setChecked(false);
-                    checkboxTodo.setChecked(false);
-                    itemAdapter.filter("done");
-                }
-                if (v == checkboxTodo) {
-                    checkboxAll.setChecked(false);
-                    checkboxDone.setChecked(false);
-                    itemAdapter.filter("todo");
+                    checkboxAll.setChecked(true);
+                    filterListBy(FeatureRealization.ALL.getType());
                 }
             }
-        };
-
-        checkboxAll.setOnClickListener(onClickListener);
-        checkboxDone.setOnClickListener(onClickListener);
-        checkboxTodo.setOnClickListener(onClickListener);
+        });
+        checkboxDone.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (checkboxTodo.isChecked() && isChecked) {
+                checkboxDone.setChecked(false);
+                checkboxTodo.setChecked(false);
+                checkboxAll.setChecked(true);
+                filterListBy(FeatureRealization.ALL.getType());
+            }
+            else {
+                checkboxAll.setChecked(false);
+                filterListBy(FeatureRealization.DONE.getType());
+            }
+        });
+        checkboxTodo.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (checkboxDone.isChecked() && isChecked) {
+                checkboxDone.setChecked(false);
+                checkboxTodo.setChecked(false);
+                checkboxAll.setChecked(true);
+                filterListBy(FeatureRealization.ALL.getType());
+            }
+            else {
+                checkboxAll.setChecked(false);
+                filterListBy(FeatureRealization.TODO.getType());
+            }
+        });
 
         checkboxAll.setChecked(true);
         checkboxDone.setChecked(false);
         checkboxTodo.setChecked(false);
+    }
+
+    private void filterListBy(String filterType) {
+        itemAdapter.filter(filterType);
     }
 
     private void setupAdapter() {
@@ -98,17 +137,15 @@ public class MainActivity extends BaseActivity {
             }
             return false;
         });
-        
+
         itemAdapter.getItemFilter().withFilterPredicate(new IItemAdapter.Predicate<FeatureListItem>() {
             @Override
             public boolean filter(FeatureListItem feature, CharSequence constraint) {
-                if (constraint == "all") {
-                    return feature.getFeature().getName().startsWith("");
-                }
-                else if (constraint == "done") {
+                if (constraint == FeatureRealization.ALL.getType()) {
+                    return true;
+                } else if (constraint == FeatureRealization.DONE.getType()) {
                     return feature.getFeature().isDone();
-                }
-                else if (constraint == "todo") {
+                } else if (constraint == FeatureRealization.TODO.getType()) {
                     return !feature.getFeature().isDone();
                 }
                 return true;
@@ -117,7 +154,6 @@ public class MainActivity extends BaseActivity {
     }
 
     private void setupRecyclerView() {
-        recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
