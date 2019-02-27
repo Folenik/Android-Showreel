@@ -89,8 +89,8 @@
         />
 
     <android.support.v7.widget.RecyclerView
-        android:layout_width="@dimen/spacing0"
-        android:layout_height="@dimen/spacing0"
+        android:layout_width="@dimen/wrap_constraint"
+        android:layout_height="@dimen/wrap_constraint"
         android:scrollbars="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
