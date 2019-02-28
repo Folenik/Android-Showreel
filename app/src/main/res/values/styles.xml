@@ -7,7 +7,7 @@
     </style>
 
     <style name="ShowreelLabel.White">
-        <item name="android:textColor">@color/white</item>
+        <item name="android:textColor">@color/colorWhite</item>
     </style>
 
     <style name="ShowreelLabel.Header">
@@ -41,7 +41,7 @@
     </style>
 
     <style name="ShowreelLabel.Long">
-        <item name="android:textColor">@color/black</item>
+        <item name="android:textColor">@color/colorBlack</item>
         <item name="android:singleLine">false</item>
         <item name="android:ellipsize">none</item>
         <item name="android:textSize">@dimen/textSize24</item>
@@ -58,7 +58,7 @@
     </style>
 
     <style name="ShowreelLabel.Long.Small.Colored">
-        <item name="android:textColor">@color/classified_button</item>
+        <item name="android:textColor">@color/colorClassifiedButton</item>
     </style>
 
     <style name="ShowreelLabel.Long.Bold">

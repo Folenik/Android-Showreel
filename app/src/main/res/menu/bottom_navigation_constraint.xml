@@ -4,31 +4,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/action_compass"
-        android:enabled="true"
         android:icon="@drawable/ic_lightbulb"
         android:title="@string/constraint_menu_1"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/action_newspaper"
-        android:enabled="true"
         android:icon="@drawable/ic_mail"
         android:title="@string/constraint_menu_2"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/action_label"
-        android:enabled="true"
         android:icon="@drawable/ic_label"
         android:title="@string/constraint_menu_3"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/action_bubble"
-        android:enabled="true"
         android:icon="@drawable/ic_bubble"
         android:title="@string/constraint_menu_4"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/action_settings"
-        android:enabled="true"
         android:icon="@drawable/ic_menu_white"
         android:title="@string/constraint_menu_5"
         app:showAsAction="ifRoom" />

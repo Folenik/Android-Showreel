@@ -2,7 +2,7 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/almost_white"
+    android:background="@color/colorGrayLight"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -97,9 +97,8 @@
         app:layout_constraintTop_toBottomOf="@id/button_motor"
         app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
         tools:listitem="@layout/item_constraint"
-        tools:itemCount="3">
-
-    </android.support.v7.widget.RecyclerView>
+        tools:itemCount="3"
+        />
 
     
     <android.support.design.widget.BottomNavigationView
@@ -108,12 +107,12 @@
         android:layout_height="@dimen/spacing56"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:itemBackground="@color/white"
+        app:itemBackground="@color/colorWhite"
         app:itemIconTint="@drawable/menu_colors"
         app:itemTextColor="@drawable/menu_colors"
         app:menu="@menu/bottom_navigation_constraint"
-        app:labelVisibilityMode="unlabeled">
-    </android.support.design.widget.BottomNavigationView>
+        app:labelVisibilityMode="unlabeled"
+        />
     
 </android.support.constraint.ConstraintLayout>
 
