@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.folen.androidshowreel.R;
 import com.folen.androidshowreel.base.BaseActivity;
 import com.folen.androidshowreel.model.Feature;
+import com.folen.androidshowreel.util.FeatureRealization;
 import com.folen.androidshowreel.util.listItems.FeatureListItem;
 import com.folen.androidshowreel.util.manager.AssetManager;
 import com.folen.androidshowreel.util.manager.IntentManager;
@@ -45,19 +46,11 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        initViews();
         init();
     }
 
-    private void initViews() {
-        checkboxAll = findViewById(R.id.checkbox_all);
-        checkboxDone = findViewById(R.id.checkbox_done);
-        checkboxTodo = findViewById(R.id.checkbox_todo);
-
-        recyclerView = findViewById(R.id.recycler_view);
-    }
-
     private void init() {
+        setupViews();
         setupAdapter();
         setupRecyclerView();
         setupCheckboxes();
@@ -66,21 +59,11 @@ public class MainActivity extends BaseActivity {
         }
     }
 
-    public enum FeatureRealization {
-
-        ALL(FEATURE_REALIZATION_ALL),
-        DONE(FEATURE_REALIZATION_DONE),
-        TODO(FEATURE_REALIZATION_TODO);
-
-        private final String type;
-
-        FeatureRealization(String type) {
-            this.type = type;
-        }
-
-        public String getType() {
-            return type;
-        }
+    private void setupViews() {
+        checkboxAll = findViewById(R.id.checkbox_all);
+        checkboxDone = findViewById(R.id.checkbox_done);
+        checkboxTodo = findViewById(R.id.checkbox_todo);
+        recyclerView = findViewById(R.id.recycler_view);
     }
 
     private void setupCheckboxes() {
@@ -93,6 +76,9 @@ public class MainActivity extends BaseActivity {
                     filterListBy(FeatureRealization.ALL.getType());
                 }
             }
+            else if(!checkboxTodo.isChecked() && !checkboxDone.isChecked()){
+                 checkboxAll.setChecked(true);
+            }
         });
         checkboxDone.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if (checkboxTodo.isChecked() && isChecked) {
@@ -100,7 +86,12 @@ public class MainActivity extends BaseActivity {
                 checkboxTodo.setChecked(false);
                 checkboxAll.setChecked(true);
                 filterListBy(FeatureRealization.ALL.getType());
-            } else {
+            }
+            else if(!checkboxAll.isChecked() && !checkboxTodo.isChecked() && !isChecked) {
+                checkboxAll.setChecked(true);
+                filterListBy(FeatureRealization.ALL.getType());
+            }
+            else {
                 checkboxAll.setChecked(false);
                 filterListBy(FeatureRealization.DONE.getType());
             }
@@ -111,7 +102,12 @@ public class MainActivity extends BaseActivity {
                 checkboxTodo.setChecked(false);
                 checkboxAll.setChecked(true);
                 filterListBy(FeatureRealization.ALL.getType());
-            } else {
+            }
+            else if(!checkboxAll.isChecked() && !checkboxDone.isChecked() && !isChecked) {
+                checkboxAll.setChecked(true);
+                filterListBy(FeatureRealization.ALL.getType());
+            }
+            else {
                 checkboxAll.setChecked(false);
                 filterListBy(FeatureRealization.TODO.getType());
             }
