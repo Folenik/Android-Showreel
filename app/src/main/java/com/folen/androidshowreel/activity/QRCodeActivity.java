@@ -16,9 +16,9 @@ import me.dm7.barcodescanner.zxing.ZXingScannerView;
 public class QRCodeActivity extends BaseActivity implements ZXingScannerView.ResultHandler {
 
     private ZXingScannerView mScannerView;
-    private FrameLayout contentFrame;
-    private Toolbar toolbar;
-    private AppCompatTextView mQRTextview;
+    private FrameLayout sContentFrame;
+    private Toolbar mToolbar;
+    private AppCompatTextView mQRTextView;
 
     @Override
     protected void onCreate(Bundle state) {
@@ -33,14 +33,14 @@ public class QRCodeActivity extends BaseActivity implements ZXingScannerView.Res
     }
 
     public void setupViews() {
-        contentFrame = findViewById(R.id.qr_content);
-        toolbar = findViewById(R.id.qr_toolbar);
-        mQRTextview = findViewById(R.id.qr_textview);
+        sContentFrame = findViewById(R.id.qr_content);
+        mToolbar = findViewById(R.id.qr_toolbar);
+        mQRTextView = findViewById(R.id.qr_textview);
 
         mScannerView = new ZXingScannerView(this);
-        contentFrame.addView(mScannerView);
-        toolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
-        toolbar.setTitle(R.string.qr_feature_name);
+        sContentFrame.addView(mScannerView);
+        mToolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
+        mToolbar.setTitle(R.string.qr_feature_name);
     }
 
     @Override
@@ -58,7 +58,7 @@ public class QRCodeActivity extends BaseActivity implements ZXingScannerView.Res
 
     @Override
     public void handleResult(Result rawResult) {
-        mQRTextview.setText(R.string.qr_code + rawResult.getText());
+        mQRTextView.setText(getString(R.string.qr_code) + rawResult.getText());
         mScannerView.resumeCameraPreview(this);
     }
 }
