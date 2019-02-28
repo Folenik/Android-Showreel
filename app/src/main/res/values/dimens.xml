@@ -18,4 +18,14 @@
     <dimen name="spacing48">48sp</dimen>
     <dimen name="spacing60">60sp</dimen>
     <dimen name="spacing64">64sp</dimen>
+    <dimen name="spacing68">68sp</dimen>
+    <dimen name="spacing80">80sp</dimen>
+    <dimen name="spacing96">96sp</dimen>
+    <dimen name="spacing104">104sp</dimen>
+    <dimen name="spacing108">108sp</dimen>
+    <dimen name="spacing110">110sp</dimen>
+    <dimen name="spacing120">120sp</dimen>
+    <dimen name="spacing128">128sp</dimen>
+    <dimen name="spacing140">140sp</dimen>
+    <dimen name="spacing256">256sp</dimen>
 </resources>

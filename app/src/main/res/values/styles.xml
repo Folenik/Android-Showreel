@@ -23,6 +23,16 @@
         <item name="android:textSize">@dimen/textSize24</item>
     </style>
 
+    <style name="ShowreelLabel.LongNoColor">
+        <item name="android:singleLine">false</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:textSize">@dimen/textSize16</item>
+    </style>
+
+    <style name="ShowreelLabel.Long.Small">
+        <item name="android:textSize">@dimen/textSize14</item>
+    </style>
+
     <style name="ShowreelLabel.Long.Bold">
         <item name="android:textStyle">bold</item>
     </style>
