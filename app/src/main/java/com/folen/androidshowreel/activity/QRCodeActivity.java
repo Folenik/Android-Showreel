@@ -3,6 +3,7 @@ package com.folen.androidshowreel.activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.RequiresPermission;
 import android.support.v7.widget.AppCompatTextView;
 import android.support.v7.widget.Toolbar;
 import android.widget.FrameLayout;
@@ -16,8 +17,6 @@ import me.dm7.barcodescanner.zxing.ZXingScannerView;
 public class QRCodeActivity extends BaseActivity implements ZXingScannerView.ResultHandler {
 
     private ZXingScannerView mScannerView;
-    private FrameLayout sContentFrame;
-    private Toolbar mToolbar;
     private AppCompatTextView mQRTextView;
 
     @Override
@@ -28,13 +27,14 @@ public class QRCodeActivity extends BaseActivity implements ZXingScannerView.Res
         setupViews();
     }
 
+    @RequiresPermission(value = CAMERA_SERVICE)
     public static Intent intent(Context context) {
         return new Intent(context, QRCodeActivity.class);
     }
 
     public void setupViews() {
-        sContentFrame = findViewById(R.id.qr_content);
-        mToolbar = findViewById(R.id.qr_toolbar);
+        FrameLayout sContentFrame = findViewById(R.id.qr_content);
+        Toolbar mToolbar = findViewById(R.id.qr_toolbar);
         mQRTextView = findViewById(R.id.qr_textview);
 
         mScannerView = new ZXingScannerView(this);
@@ -58,7 +58,7 @@ public class QRCodeActivity extends BaseActivity implements ZXingScannerView.Res
 
     @Override
     public void handleResult(Result rawResult) {
-        mQRTextView.setText(getString(R.string.qr_code) + rawResult.getText());
+        mQRTextView.setText(getString(R.string.qr_code, rawResult.getText()));
         mScannerView.resumeCameraPreview(this);
     }
 }
