@@ -3,7 +3,6 @@ package com.folen.androidshowreel.activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.SystemClock;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -16,7 +15,6 @@ import com.folen.androidshowreel.base.BaseActivity;
 import com.folen.androidshowreel.base.BaseFragment;
 
 import java.text.DateFormat;
-import java.util.Calendar;
 import java.util.Date;
 
 public class FragmentActivity extends BaseActivity {
@@ -24,6 +22,7 @@ public class FragmentActivity extends BaseActivity {
     private Toolbar mToolbar;
     private Fragment fragment;
     private String time;
+    private Bundle bundle;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -31,7 +30,6 @@ public class FragmentActivity extends BaseActivity {
         setContentView(R.layout.activity_fragment);
 
         setupToolbar();
-        setupTime();
     }
 
     private void setupToolbar() {
@@ -39,10 +37,6 @@ public class FragmentActivity extends BaseActivity {
         setSupportActionBar(mToolbar);
         mToolbar.setTitle(R.string.feature_fragment_name);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-    }
-
-    private void setupTime() {
-        time = DateFormat.getTimeInstance(DateFormat.MEDIUM).format(new Date());
     }
 
     @Override
@@ -56,43 +50,52 @@ public class FragmentActivity extends BaseActivity {
         switch (item.getItemId()) {
             case R.id.action_add:
                 fragment = new BaseFragment();
-                //czy to ma sens w ogóle używać tylko 1 fragmentu?
-                //chciałbym właśnie w taki sposób rozróżniać akcję added od replace
-                //ale tak jak gadaliśmy, ten textview nie istnieje
-                //próbowałem robić wg. tego co mówiłeś mi przez tel, ale
-                //nie potrafię do tego dojść, możesz mi zostawić jakieś wskazówki?
-                //teraz wywala NPE tak jak gadaliśmy
-                ((BaseFragment) fragment).setTextViewText(getString(R.string.added_fragment) + time);
                 addFragment(fragment);
+                getTime();
+                setFragmentText(getString(R.string.added_fragment));
                 break;
             case R.id.action_replace:
                 fragment = new BaseFragment();
-                ((BaseFragment) fragment).setTextViewText(getString(R.string.replaced_fragment) + time);
                 replaceFragment(fragment);
+                getTime();
+                setFragmentText(getString(R.string.replaced_fragment));
                 break;
             case R.id.action_remove:
                 removeFragment(fragment);
                 break;
             case android.R.id.home:
-                removeFragment(fragment);
+                onBackPressed();
                 break;
         }
         return true;
     }
 
-    public void addFragment(Fragment fragment) {
+    private void setFragmentText(String textToAdd) {
+        if(bundle == null) {
+            bundle = new Bundle();
+        }
+
+        bundle.putString("fragmentMessage", textToAdd + " " + time);
+        fragment.setArguments(bundle);
+    }
+
+    private void getTime() {
+        time = DateFormat.getTimeInstance(DateFormat.MEDIUM).format(new Date());
+    }
+
+    private void addFragment(Fragment fragment) {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.add(R.id.fragment_content, fragment);
         fragmentTransaction.commit();
     }
 
-    public void replaceFragment(Fragment fragment) {
+    private void replaceFragment(Fragment fragment) {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.fragment_content, fragment);
         fragmentTransaction.commit();
     }
 
-    public void removeFragment(Fragment fragment) {
+    private void removeFragment(Fragment fragment) {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.remove(fragment);
         fragmentTransaction.commit();

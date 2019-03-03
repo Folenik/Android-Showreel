@@ -11,7 +11,7 @@
     <string name="replace_fragment">Replace</string>
     <string name="remove_fragment">Remove</string>
     <string name="base_fragment">Base fragment</string>
-    <string name="added_fragment">Added at </string>
-    <string name="replaced_fragment">Replaced at </string>
+    <string name="added_fragment">Added at:</string>
+    <string name="replaced_fragment">Replaced at:</string>
     <string name="feature_fragment_name">Fragments</string>
 </resources>
