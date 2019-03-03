@@ -1,25 +1,23 @@
 package com.folen.androidshowreel.activity;
 
 import android.Manifest;
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.annotation.RequiresPermission;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.AppCompatTextView;
 import android.support.v7.widget.Toolbar;
 import android.widget.FrameLayout;
 
 import com.folen.androidshowreel.R;
 import com.folen.androidshowreel.base.BaseActivity;
+import com.folen.androidshowreel.util.manager.DialogManager;
+import com.folen.androidshowreel.util.manager.PermissionManager;
 import com.google.zxing.Result;
 
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
-
-import static android.media.MediaRecorder.VideoSource.CAMERA;
 
 public class QRCodeActivity extends BaseActivity implements ZXingScannerView.ResultHandler {
 
@@ -32,23 +30,11 @@ public class QRCodeActivity extends BaseActivity implements ZXingScannerView.Res
         setContentView(R.layout.activity_qr_scanner);
 
         setupViews();
-        askForPermission();
     }
 
     @RequiresPermission(value = CAMERA_SERVICE)
     public static Intent intent(Context context) {
         return new Intent(context, QRCodeActivity.class);
-    }
-
-    public void askForPermission() {
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
-            if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.CAMERA)) {
-
-            }
-            else {
-                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, CAMERA);
-            }
-        }
     }
 
     public void setupViews() {
@@ -65,8 +51,14 @@ public class QRCodeActivity extends BaseActivity implements ZXingScannerView.Res
     @Override
     public void onResume() {
         super.onResume();
-        mScannerView.setResultHandler(this);
-        mScannerView.startCamera();
+        if (PermissionManager.isGranted(this, Manifest.permission.CAMERA)) {
+            mScannerView.setResultHandler(this);
+            mScannerView.startCamera();
+        } else {
+            DialogManager.showFinishDialog(this,
+                    R.string.error_permission_rationale_camera_title,
+                    R.string.error_permission_rationale_camera_description);
+        }
     }
 
     @Override
