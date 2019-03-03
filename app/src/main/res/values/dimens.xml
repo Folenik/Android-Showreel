@@ -10,6 +10,7 @@
     <dimen name="textSize32">32sp</dimen>
     <dimen name="textSize36">36sp</dimen>
 
+    <dimen name="spacing0">0dp</dimen>
     <dimen name="spacing4">4dp</dimen>
     <dimen name="spacing5">5dp</dimen>
     <dimen name="spacing6">6dp</dimen>
