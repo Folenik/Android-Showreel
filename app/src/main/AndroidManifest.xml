@@ -29,9 +29,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.ConstraintLayoutActivity"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".activity.QRCodeActivity"
             android:screenOrientation="portrait" />
     </application>
