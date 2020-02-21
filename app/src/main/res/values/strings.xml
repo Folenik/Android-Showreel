@@ -1,15 +1,41 @@
 <resources>
     <string name="app_name">Android Showreel</string>
-
-    <!-- MainActivity list -->
+  
+    <!--Main menu-->
     <string name="list_item_name">Name</string>
     <string name="list_item_description">Description</string>
+
+    <!--Errors-->
     <string name="error_list_loading">Error occurred on loading list process.</string>
     <string name="error_not_implemented">Sorry! This feature is currently not implemented</string>
+
 
     <!-- MainActivity checkboxes -->
     <string name="checkbox_all_items">All items</string>
     <string name="checkbox_done_items">Done items</string>
     <string name="checkbox_todo_items">TODO items</string>
 
+    <!--Constraint Layout Activity-->
+    <string name="button_explore">Explore</string>
+    <string name="button_motors">Motors</string>
+    <string name="button_classified">Classified</string>
+    <string name="button_services">Services</string>
+    <string name="button_properties">Properties</string>
+    <string name="button_jobs">Jobs</string>
+    <string name="constraint_item_name">Popular Trending</string>
+    <string name="constraint_item_view">View all</string>
+    <string name="constraint_value">Play Station</string>
+
+    <!-- QR Scanner strings -->
+    <string name="qr_feature_name">QR Code scanner</string>
+    <string name="qr_code">QR CODE: %s</string>
+
+    <!--Permissions-->
+    <string name="error_permission_rationale_camera_title">Camera permission</string>
+    <string name="error_permission_rationale_camera_description">We need your permission to open a camera - it is nessessary to scan a QR code.</string>
+    <string name="error_permission_rationale_camera_accept_button">Open settings</string>
+
+    <!--Dialogs-->
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
 </resources>

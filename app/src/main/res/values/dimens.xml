@@ -8,6 +8,7 @@
     <dimen name="textSize20">20sp</dimen>
     <dimen name="textSize24">24sp</dimen>
     <dimen name="textSize32">32sp</dimen>
+    <dimen name="textSize36">36sp</dimen>
 
     <dimen name="spacing4">4sp</dimen>
     <dimen name="spacing5">5sp</dimen>
@@ -19,4 +20,6 @@
     <dimen name="spacing60">60sp</dimen>
     <dimen name="spacing64">64sp</dimen>
     <dimen name="spacing68">68sp</dimen>
+
+    <dimen name="wrap_constraint">0dp</dimen>
 </resources>

@@ -12,6 +12,7 @@
     "description": "Description about Dependency Injection.",
     "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg",
     "isDone": "false"
+
   },
   {
     "id": 2,
@@ -75,6 +76,7 @@
     "description": "Description about Loading image from gallery.",
     "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg",
     "isDone": "false"
+
   },
   {
     "id": 11,
@@ -82,6 +84,7 @@
     "description": "Description about Gesture detector.",
     "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg",
     "isDone": "false"
+
   },
   {
     "id": 12,
@@ -89,6 +92,7 @@
     "description": "Description about Animations.",
     "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg",
     "isDone": "false"
+
   },
   {
     "id": 13,
@@ -96,6 +100,7 @@
     "description": "Description about Fragment translations.",
     "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg",
     "isDone": "false"
+
   },
   {
     "id": 14,
@@ -131,6 +136,7 @@
     "description": "Description about Simple REST API with RestClient.",
     "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg",
     "isDone": "false"
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
   },
   {
     "id": 19,
@@ -145,6 +151,7 @@
     "description": "Description about Rx streams.",
     "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg",
     "isDone": "false"
+    "img": "https://i.wpimg.pl/O/644x429/d.wpimg.pl/2148438399-1788913762/wegiel.jpg"
   },
   {
     "id": 21,
