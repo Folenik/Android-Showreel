@@ -1,16 +1,13 @@
 package com.folen.androidshowreel.activity;
 
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.support.v7.widget.AppCompatCheckBox;
 import android.support.annotation.NonNull;
+import android.support.v7.widget.AppCompatCheckBox;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
 import android.widget.Toast;
 
 import com.folen.androidshowreel.R;
@@ -31,9 +28,6 @@ import java.util.List;
 
 import static com.folen.androidshowreel.util.Const.DEFAULT_ANIMATION_DURATION;
 import static com.folen.androidshowreel.util.Const.LIST_JSON_NAME;
-import static com.folen.androidshowreel.util.Const.FEATURE_REALIZATION_ALL;
-import static com.folen.androidshowreel.util.Const.FEATURE_REALIZATION_DONE;
-import static com.folen.androidshowreel.util.Const.FEATURE_REALIZATION_TODO;
 import static com.folen.androidshowreel.util.Const.QR_SCANNER_ID;
 import static com.folen.androidshowreel.util.Const.REQUEST_CODE_QR_SCANNER;
 
@@ -81,9 +75,8 @@ public class MainActivity extends BaseActivity {
                     checkboxAll.setChecked(true);
                     filterListBy(FeatureRealization.ALL.getType());
                 }
-            }
-            else if(!checkboxTodo.isChecked() && !checkboxDone.isChecked()){
-                 checkboxAll.setChecked(true);
+            } else if (!checkboxTodo.isChecked() && !checkboxDone.isChecked()) {
+                checkboxAll.setChecked(true);
             }
         });
         checkboxDone.setOnCheckedChangeListener((buttonView, isChecked) -> {
@@ -92,12 +85,10 @@ public class MainActivity extends BaseActivity {
                 checkboxTodo.setChecked(false);
                 checkboxAll.setChecked(true);
                 filterListBy(FeatureRealization.ALL.getType());
-            }
-            else if(!checkboxAll.isChecked() && !checkboxTodo.isChecked() && !isChecked) {
+            } else if (!checkboxAll.isChecked() && !checkboxTodo.isChecked() && !isChecked) {
                 checkboxAll.setChecked(true);
                 filterListBy(FeatureRealization.ALL.getType());
-            }
-            else {
+            } else {
                 checkboxAll.setChecked(false);
                 filterListBy(FeatureRealization.DONE.getType());
             }
@@ -108,12 +99,10 @@ public class MainActivity extends BaseActivity {
                 checkboxTodo.setChecked(false);
                 checkboxAll.setChecked(true);
                 filterListBy(FeatureRealization.ALL.getType());
-            }
-            else if(!checkboxAll.isChecked() && !checkboxDone.isChecked() && !isChecked) {
+            } else if (!checkboxAll.isChecked() && !checkboxDone.isChecked() && !isChecked) {
                 checkboxAll.setChecked(true);
                 filterListBy(FeatureRealization.ALL.getType());
-            }
-            else {
+            } else {
                 checkboxAll.setChecked(false);
                 filterListBy(FeatureRealization.TODO.getType());
             }

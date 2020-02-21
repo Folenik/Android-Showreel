@@ -39,5 +39,7 @@ public class Feature {
         return imageUrl;
     }
 
-    public boolean isDone() { return isDone; }
+    public boolean isDone() {
+        return isDone;
+    }
 }

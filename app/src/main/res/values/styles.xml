@@ -22,7 +22,7 @@
 
     <style name="ShowreelLabel.Header.Huge">
         <item name="android:textSize">@dimen/textSize36</item>
-        <item name="android:paddingLeft">@dimen/spacing0</item>
+        <item name="android:paddingLeft">@dimen/wrap_constraint</item>
     </style>
 
     <style name="ShowreelLabel.White.ButtonTextBig">

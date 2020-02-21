@@ -8,60 +8,61 @@
 
 
     <android.support.v7.widget.AppCompatTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/checkbox_all_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/checkbox_all_items"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
-
-    <android.support.v7.widget.AppCompatTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/checkbox_done_text"
-        android:text="@string/checkbox_done_items"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/checkbox_done_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/checkbox_done_items"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatTextView
         android:id="@+id/checkbox_todo_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/checkbox_todo_items"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/checkbox_all"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/checkbox_all_text"
-        app:layout_constraintStart_toStartOf="@id/checkbox_all_text"
         app:layout_constraintEnd_toEndOf="@id/checkbox_all_text"
-        android:id="@+id/checkbox_all"/>
+        app:layout_constraintStart_toStartOf="@id/checkbox_all_text"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_all_text" />
 
     <android.support.v7.widget.AppCompatCheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/checkbox_done"
-        app:layout_constraintTop_toBottomOf="@id/checkbox_done_text"
-        app:layout_constraintStart_toStartOf="@id/checkbox_done_text"
-        app:layout_constraintEnd_toEndOf="@id/checkbox_done_text"/>
-
-    <android.support.v7.widget.AppCompatCheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/checkbox_done_text"
+        app:layout_constraintStart_toStartOf="@id/checkbox_done_text"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_done_text" />
+
+    <android.support.v7.widget.AppCompatCheckBox
         android:id="@+id/checkbox_todo"
-        app:layout_constraintTop_toBottomOf="@id/checkbox_todo_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/checkbox_todo_text"
         app:layout_constraintStart_toStartOf="@id/checkbox_todo_text"
-        app:layout_constraintEnd_toEndOf="@id/checkbox_todo_text"/>
+        app:layout_constraintTop_toBottomOf="@id/checkbox_todo_text" />
 
 
     <android.support.v7.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/recycler_view"
-        app:layout_constraintTop_toBottomOf="@id/checkbox_all"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wrap_constraint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_all" />
 
 </android.support.constraint.ConstraintLayout>

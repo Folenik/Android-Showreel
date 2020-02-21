@@ -3,7 +3,6 @@ package com.folen.androidshowreel.util.manager;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.provider.Settings;
 import android.support.annotation.Nullable;
