@@ -19,7 +19,7 @@ allprojects {
     }
 }
 
-task wrapper(type: Wrapper) {
+task versionWrapper(type: Wrapper) {
     gradleVersion = "${toolVersions.wrapper}"
 }
 
