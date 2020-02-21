@@ -11,7 +11,6 @@ import com.folen.androidshowreel.model.Feature;
 import com.folen.androidshowreel.util.manager.ImageManager;
 import com.mikepenz.fastadapter.FastAdapter;
 import com.mikepenz.fastadapter.items.AbstractItem;
-
 import java.util.List;
 
 import static com.folen.androidshowreel.util.Const.ZERO;

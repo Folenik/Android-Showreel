@@ -5,21 +5,25 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.support.v7.widget.AppCompatCheckBox;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 import android.widget.Toast;
 
 import com.folen.androidshowreel.R;
 import com.folen.androidshowreel.base.BaseActivity;
 import com.folen.androidshowreel.model.Feature;
+import com.folen.androidshowreel.util.FeatureRealization;
 import com.folen.androidshowreel.util.listItems.FeatureListItem;
 import com.folen.androidshowreel.util.manager.AssetManager;
 import com.folen.androidshowreel.util.manager.IntentManager;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.mikepenz.fastadapter.FastAdapter;
+import com.mikepenz.fastadapter.IItemAdapter;
 import com.mikepenz.fastadapter.adapters.ItemAdapter;
 
 import java.util.ArrayList;
@@ -27,6 +31,9 @@ import java.util.List;
 
 import static com.folen.androidshowreel.util.Const.DEFAULT_ANIMATION_DURATION;
 import static com.folen.androidshowreel.util.Const.LIST_JSON_NAME;
+import static com.folen.androidshowreel.util.Const.FEATURE_REALIZATION_ALL;
+import static com.folen.androidshowreel.util.Const.FEATURE_REALIZATION_DONE;
+import static com.folen.androidshowreel.util.Const.FEATURE_REALIZATION_TODO;
 import static com.folen.androidshowreel.util.Const.QR_SCANNER_ID;
 import static com.folen.androidshowreel.util.Const.REQUEST_CODE_QR_SCANNER;
 
@@ -38,6 +45,8 @@ public class MainActivity extends BaseActivity {
     private FastAdapter<FeatureListItem> fastAdapter = FastAdapter.with(itemAdapter);
     private List<Feature> featureList = new ArrayList<>();
 
+    private AppCompatCheckBox checkboxAll, checkboxDone, checkboxTodo;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,11 +56,76 @@ public class MainActivity extends BaseActivity {
     }
 
     private void init() {
+        setupViews();
         setupAdapter();
         setupRecyclerView();
+        setupCheckboxes();
         if (loadListWithResult()) {
             addItems();
         }
+    }
+
+    private void setupViews() {
+        checkboxAll = findViewById(R.id.checkbox_all);
+        checkboxDone = findViewById(R.id.checkbox_done);
+        checkboxTodo = findViewById(R.id.checkbox_todo);
+        recyclerView = findViewById(R.id.recycler_view);
+    }
+
+    private void setupCheckboxes() {
+        checkboxAll.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (checkboxTodo.isChecked() || checkboxDone.isChecked()) {
+                if (isChecked) {
+                    checkboxDone.setChecked(false);
+                    checkboxTodo.setChecked(false);
+                    checkboxAll.setChecked(true);
+                    filterListBy(FeatureRealization.ALL.getType());
+                }
+            }
+            else if(!checkboxTodo.isChecked() && !checkboxDone.isChecked()){
+                 checkboxAll.setChecked(true);
+            }
+        });
+        checkboxDone.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (checkboxTodo.isChecked() && isChecked) {
+                checkboxDone.setChecked(false);
+                checkboxTodo.setChecked(false);
+                checkboxAll.setChecked(true);
+                filterListBy(FeatureRealization.ALL.getType());
+            }
+            else if(!checkboxAll.isChecked() && !checkboxTodo.isChecked() && !isChecked) {
+                checkboxAll.setChecked(true);
+                filterListBy(FeatureRealization.ALL.getType());
+            }
+            else {
+                checkboxAll.setChecked(false);
+                filterListBy(FeatureRealization.DONE.getType());
+            }
+        });
+        checkboxTodo.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (checkboxDone.isChecked() && isChecked) {
+                checkboxDone.setChecked(false);
+                checkboxTodo.setChecked(false);
+                checkboxAll.setChecked(true);
+                filterListBy(FeatureRealization.ALL.getType());
+            }
+            else if(!checkboxAll.isChecked() && !checkboxDone.isChecked() && !isChecked) {
+                checkboxAll.setChecked(true);
+                filterListBy(FeatureRealization.ALL.getType());
+            }
+            else {
+                checkboxAll.setChecked(false);
+                filterListBy(FeatureRealization.TODO.getType());
+            }
+        });
+
+        checkboxAll.setChecked(true);
+        checkboxDone.setChecked(false);
+        checkboxTodo.setChecked(false);
+    }
+
+    private void filterListBy(String filterType) {
+        itemAdapter.filter(filterType);
     }
 
     private void setupAdapter() {
@@ -63,10 +137,25 @@ public class MainActivity extends BaseActivity {
             }
             return false;
         });
+
+        itemAdapter.getItemFilter().withFilterPredicate(new IItemAdapter.Predicate<FeatureListItem>() {
+            @Override
+            public boolean filter(FeatureListItem feature, CharSequence constraint) {
+                if (constraint == FeatureRealization.DONE.getType()) {
+                    return feature.getFeature().isDone();
+                } else if (constraint == FeatureRealization.TODO.getType()) {
+                    return !feature.getFeature().isDone();
+                } else {
+                    return true;
+                }
+            }
+        });
     }
 
     private void setupRecyclerView() {
+
         recyclerView = findViewById(R.id.recycler_view);
+
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);
         recyclerView.setItemAnimator(new DefaultItemAnimator());

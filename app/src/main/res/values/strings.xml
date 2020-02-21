@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Android Showreel</string>
-
+  
     <!--Main menu-->
     <string name="list_item_name">Name</string>
     <string name="list_item_description">Description</string>
@@ -8,6 +8,12 @@
     <!--Errors-->
     <string name="error_list_loading">Error occurred on loading list process.</string>
     <string name="error_not_implemented">Sorry! This feature is currently not implemented</string>
+
+
+    <!-- MainActivity checkboxes -->
+    <string name="checkbox_all_items">All items</string>
+    <string name="checkbox_done_items">Done items</string>
+    <string name="checkbox_todo_items">TODO items</string>
 
     <!--Constraint Layout Activity-->
     <string name="button_explore">Explore</string>
