@@ -72,6 +72,8 @@ public class IntentManager {
                         PermissionManager.requestPermission(activity, Manifest.permission.CAMERA, REQUEST_CODE_QR_SCANNER);
                     }
                 }
+            case 33:
+                Toast.makeText(activity, "Feature under construction.", Toast.LENGTH_SHORT).show();
             default:
                 return null;
         }
