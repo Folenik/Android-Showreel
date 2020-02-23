@@ -1,8 +1,8 @@
 package com.folen.androidshowreel.util.manager;
 
 import android.content.DialogInterface;
-import android.support.annotation.StringRes;
-import android.support.v7.app.AlertDialog;
+import androidx.annotation.StringRes;
+import androidx.appcompat.app.AlertDialog;
 
 import com.folen.androidshowreel.R;
 import com.folen.androidshowreel.base.BaseActivity;
