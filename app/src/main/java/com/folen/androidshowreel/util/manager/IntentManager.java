@@ -12,6 +12,7 @@ import androidx.annotation.Nullable;
 import com.folen.androidshowreel.R;
 import com.folen.androidshowreel.activity.ConfigurationChangesActivity;
 import com.folen.androidshowreel.activity.ConstraintLayoutActivity;
+import com.folen.androidshowreel.activity.DataBindingActivity;
 import com.folen.androidshowreel.activity.KotlinActivity;
 import com.folen.androidshowreel.activity.QRCodeActivity;
 import com.folen.androidshowreel.activity.SharedPrefActivity;
@@ -85,6 +86,9 @@ public class IntentManager {
             case 35:
                 ConfigurationChangesActivity configurationChangesActivity = new ConfigurationChangesActivity();
                 return configurationChangesActivity.intent(activity);
+            case 38:
+                DataBindingActivity dataBindingActivity = new DataBindingActivity();
+                return dataBindingActivity.intent(activity);
             default:
                 return null;
         }
