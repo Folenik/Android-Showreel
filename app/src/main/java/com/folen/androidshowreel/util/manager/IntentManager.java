@@ -5,13 +5,15 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.provider.Settings;
-import androidx.annotation.Nullable;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
 
 import com.folen.androidshowreel.R;
 import com.folen.androidshowreel.activity.ConstraintLayoutActivity;
 import com.folen.androidshowreel.activity.KotlinActivity;
 import com.folen.androidshowreel.activity.QRCodeActivity;
+import com.folen.androidshowreel.activity.SharedPrefActivity;
 import com.folen.androidshowreel.base.BaseActivity;
 import com.folen.androidshowreel.model.Feature;
 
@@ -73,6 +75,9 @@ public class IntentManager {
                         PermissionManager.requestPermission(activity, Manifest.permission.CAMERA, REQUEST_CODE_QR_SCANNER);
                     }
                 }
+            case 31:
+                SharedPrefActivity sharedPrefActivity = new SharedPrefActivity();
+                return sharedPrefActivity.intent(activity);
             case 33:
                 KotlinActivity kotlinActivity = new KotlinActivity();
                 return kotlinActivity.intent(activity);
