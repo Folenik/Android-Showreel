@@ -33,6 +33,12 @@
     <!-- KotlinActivity strings -->
     <string name="textview_was_born">%1$s was born in: %2$d</string>
 
+
+    <!-- SharedPrefActivity strins -->
+    <string name="textview_seek_bar_changes">Last saved value of SeekBar: %1$d \n Times you saved the value: %2$d</string>
+    <string name="value_not_set">There is no value in SharedPref</string>
+    <string name="seek_bar_default_value">Default SeekBar value saved.</string>
+
     <!--Permissions-->
     <string name="error_permission_rationale_camera_title">Camera permission</string>
     <string name="error_permission_rationale_camera_description">We need your permission to open a camera - it is nessessary to scan a QR code.</string>
