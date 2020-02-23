@@ -13,7 +13,7 @@ class ConfigurationChangesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_configuration_changes)
-        
+
         button_register.setOnClickListener {
             Toast.makeText(this, getString(R.string.registered), LENGTH_LONG).show()
         }
