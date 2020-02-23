@@ -5,11 +5,12 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.provider.Settings;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.widget.Toast;
 
 import com.folen.androidshowreel.R;
 import com.folen.androidshowreel.activity.ConstraintLayoutActivity;
+import com.folen.androidshowreel.activity.KotlinActivity;
 import com.folen.androidshowreel.activity.QRCodeActivity;
 import com.folen.androidshowreel.base.BaseActivity;
 import com.folen.androidshowreel.model.Feature;
@@ -73,7 +74,8 @@ public class IntentManager {
                     }
                 }
             case 33:
-                Toast.makeText(activity, "Feature under construction.", Toast.LENGTH_SHORT).show();
+                KotlinActivity kotlinActivity = new KotlinActivity();
+                return kotlinActivity.intent(activity);
             default:
                 return null;
         }

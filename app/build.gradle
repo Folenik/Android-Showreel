@@ -1,4 +1,6 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion toolVersions.android.compileSdk
@@ -51,10 +53,10 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation "com.android.support:appcompat-v7:$libVersions.support"
-    implementation "com.android.support.constraint:constraint-layout:$libVersions.constraint"
-    implementation "com.android.support:design:$libVersions.support"
-    implementation "com.android.support:cardview-v7:$libVersions.support"
+    implementation "androidx.appcompat:appcompat:$libVersions.appcompat"
+    implementation "androidx.constraintlayout:constraintlayout:$libVersions.constraint"
+    implementation "com.google.android.material:material:$libVersions.material"
+    implementation "androidx.cardview:cardview:$libVersions.mainversion"
 
     implementation "com.mikepenz:fastadapter-commons:$libVersions.fastAdapter"
     implementation "com.google.code.gson:gson:$libVersions.gson"
@@ -62,4 +64,8 @@ dependencies {
     annotationProcessor "com.github.bumptech.glide:compiler:$libVersions.glide"
     implementation "com.google.android.gms:play-services:$libVersions.playServices"
     implementation "me.dm7.barcodescanner:zxing:$libVersions.zxingScanner"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$toolVersions.kotlinversion"
+}
+repositories {
+    mavenCentral()
 }
