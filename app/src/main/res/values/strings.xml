@@ -39,6 +39,14 @@
     <string name="value_not_set">There is no value in SharedPref</string>
     <string name="seek_bar_default_value">Default SeekBar value saved.</string>
 
+    <!-- ConfigurationChangesActivity strings -->
+    <string name="edittext_name">Your name</string>
+    <string name="edittext_login">Your login</string>
+    <string name="edittext_password">Your password</string>
+    <string name="edittext_retype_password">Re-type password</string>
+    <string name="button_register">Register</string>
+    <string name="registered">Registered</string>
+
     <!--Permissions-->
     <string name="error_permission_rationale_camera_title">Camera permission</string>
     <string name="error_permission_rationale_camera_description">We need your permission to open a camera - it is nessessary to scan a QR code.</string>

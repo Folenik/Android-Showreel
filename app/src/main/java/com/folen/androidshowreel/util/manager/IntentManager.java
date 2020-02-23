@@ -10,6 +10,7 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 
 import com.folen.androidshowreel.R;
+import com.folen.androidshowreel.activity.ConfigurationChangesActivity;
 import com.folen.androidshowreel.activity.ConstraintLayoutActivity;
 import com.folen.androidshowreel.activity.KotlinActivity;
 import com.folen.androidshowreel.activity.QRCodeActivity;
@@ -81,6 +82,9 @@ public class IntentManager {
             case 33:
                 KotlinActivity kotlinActivity = new KotlinActivity();
                 return kotlinActivity.intent(activity);
+            case 35:
+                ConfigurationChangesActivity configurationChangesActivity = new ConfigurationChangesActivity();
+                return configurationChangesActivity.intent(activity);
             default:
                 return null;
         }
