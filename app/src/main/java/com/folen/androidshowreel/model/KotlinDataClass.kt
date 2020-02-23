@@ -1,4 +1,3 @@
 package com.folen.androidshowreel.model
 
-class KotlinDataClass {
-}
+data class KotlinDataClass(var name: String, var age: Int)
