@@ -4,7 +4,7 @@
     <data>
         <variable
             name="databind"
-            type="com.folen.androidshowreel.activity.DataBindingActivity" />
+            type="com.folen.androidshowreel.activity.DataBindingViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -20,6 +20,7 @@
 
         <androidx.appcompat.widget.AppCompatSeekBar
             android:id="@+id/seekbar"
+            android:progress="@={databind.seekBarValue}"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
@@ -31,15 +32,10 @@
             style="@style/ShowreelLabel.Header"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{String.valueOf(databind.getSeekBarValue)}"
+            android:text="@{String.valueOf(databind.seekBarValueToTextView)}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/seekbar" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/test" />
-
+        
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

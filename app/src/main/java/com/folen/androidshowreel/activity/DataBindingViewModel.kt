@@ -1,44 +1,32 @@
 package com.folen.androidshowreel.activity
 
-import android.content.Context
-import android.content.Intent
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.BaseObservable
 import androidx.databinding.Bindable
-import androidx.databinding.DataBindingUtil
-import com.folen.androidshowreel.R
-import com.folen.androidshowreel.databinding.ActivityDatabindBinding
-import kotlinx.android.synthetic.main.activity_databind.*
+import androidx.databinding.library.baseAdapters.BR
 
+class DataBindingViewModel : BaseObservable() {
 
-private var seekBarValue: Int = 0
-lateinit var binding: ActivityDatabindBinding
+    private var seekBarValue: Int = 0
+    private var seekBarValueToTextView = 0
 
-class DataBindingActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_databind)
-
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_databind)
-
-        setupSeekBar()
+    @Bindable
+    fun getSeekBarValue(): Int {
+        return seekBarValue
     }
 
-    fun setupSeekBar() {
-        seekbar.max = 100
+    fun setSeekBarValue(value: Int) {
+        this.seekBarValue = value
+        notifyPropertyChanged(BR.seekBarValue)
+        setSeekBarValueToTextView(value)
     }
 
     @Bindable
-    fun getSeekBarValue(): String {
-        return Int.toString(seekBarValue)
+    fun getSeekBarValueToTextView(): Int {
+        return seekBarValueToTextView
     }
 
-    fun setSeekBarValue(int value) {
-        seekBarValue = value
-        notifyPropertyChanged(binding.seekbar)
-    }
-
-    fun intent(context: Context): Intent {
-        return Intent(context, DataBindingActivity::class.java)
+    fun setSeekBarValueToTextView(value: Int) {
+        this.seekBarValueToTextView = value
+        notifyPropertyChanged(BR.seekBarValueToTextView)
     }
 }

@@ -1,8 +1,9 @@
 ext {
     toolVersions = [
-            kotlinversion  : '1.3.61',
-            wrapper        : '4.10',
-            android        : [
+            kotlinversion   : '1.3.61',
+            compilerversion : '3.0.0-beta6',
+            wrapper         : '4.10',
+            android         : [
                     compileSdk          : 28,
                     targetSdk           : 26,
                     minSdk              : 22,
