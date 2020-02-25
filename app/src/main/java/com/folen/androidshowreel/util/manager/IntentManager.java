@@ -13,6 +13,7 @@ import com.folen.androidshowreel.R;
 import com.folen.androidshowreel.activity.ConfigurationChangesActivity;
 import com.folen.androidshowreel.activity.ConstraintLayoutActivity;
 import com.folen.androidshowreel.activity.DataBindingActivity;
+import com.folen.androidshowreel.activity.FragmentsActivity;
 import com.folen.androidshowreel.activity.KotlinActivity;
 import com.folen.androidshowreel.activity.QRCodeActivity;
 import com.folen.androidshowreel.activity.SharedPrefActivity;
@@ -40,8 +41,8 @@ public class IntentManager {
                 //TODO
                 Toast.makeText(activity, activity.getString(R.string.error_not_implemented), Toast.LENGTH_SHORT).show();
             case 2:
-                //TODO
-                Toast.makeText(activity, activity.getString(R.string.error_not_implemented), Toast.LENGTH_SHORT).show();
+                FragmentsActivity fragmentsActivity1 = new FragmentsActivity();
+                return fragmentsActivity1.intent(activity);
             case 3:
                 //TODO
                 Toast.makeText(activity, activity.getString(R.string.error_not_implemented), Toast.LENGTH_SHORT).show();
@@ -77,12 +78,18 @@ public class IntentManager {
                         PermissionManager.requestPermission(activity, Manifest.permission.CAMERA, REQUEST_CODE_QR_SCANNER);
                     }
                 }
+            case 13:
+                FragmentsActivity fragmentsActivity2 = new FragmentsActivity();
+                return fragmentsActivity2.intent(activity);
             case 31:
                 SharedPrefActivity sharedPrefActivity = new SharedPrefActivity();
                 return sharedPrefActivity.intent(activity);
             case 33:
                 KotlinActivity kotlinActivity = new KotlinActivity();
                 return kotlinActivity.intent(activity);
+            case 34:
+                FragmentsActivity fragmentsActivity3 = new FragmentsActivity();
+                return fragmentsActivity3.intent(activity);
             case 35:
                 ConfigurationChangesActivity configurationChangesActivity = new ConfigurationChangesActivity();
                 return configurationChangesActivity.intent(activity);

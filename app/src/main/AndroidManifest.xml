@@ -45,5 +45,8 @@
         <activity
             android:name=".activity.DataBindingActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FragmentsActivity"
+            android:screenOrientation="portrait" />
     </application>
 </manifest>
