@@ -25,6 +25,10 @@
         <item name="android:paddingLeft">@dimen/wrap_constraint</item>
     </style>
 
+    <style name="ShowreelLabel.Header.Big">
+        <item name="android:textSize">@dimen/textSize16</item>
+    </style>
+
     <style name="ShowreelLabel.White.ButtonTextBig">
         <item name="android:paddingLeft">@dimen/spacing32</item>
         <item name="android:paddingRight">@dimen/spacing32</item>

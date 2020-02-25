@@ -3,7 +3,6 @@ package com.folen.androidshowreel.activity
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.folen.androidshowreel.R
@@ -17,15 +16,18 @@ class DataBindingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_databind)
 
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_databind)
-
         setupSeekBar()
-        val dataBindingViewModel = DataBindingViewModel()
-        binding.databind = dataBindingViewModel
+        setupBinding()
     }
 
-    fun setupSeekBar() {
+    private fun setupSeekBar() {
         seekbar.max = 100
+    }
+
+    private fun setupBinding() {
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_databind)
+        val dataBindingViewModel = DataBindingViewModel()
+        binding.databind = dataBindingViewModel
     }
 
     fun intent(context: Context): Intent {

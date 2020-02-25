@@ -12,20 +12,62 @@
         android:layout_height="match_parent">
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline_horizontal"
+            android:id="@+id/guideline_horizontal_above_center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.2" />
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.45" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_below_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.8" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_first_databinding_type"
+            style="@style/ShowreelLabel.Header.Big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/databinding"
+            app:layout_constraintBottom_toTopOf="@id/guideline_horizontal_above_center"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_simple_databind"
+            style="@style/ShowreelLabel.Long.Italic.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{databind.simpleDatabind}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guideline_horizontal_above_center" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_second_databinding_type"
+            style="@style/ShowreelLabel.Header.Big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/two_way_databinding"
+            app:layout_constraintBottom_toTopOf="@id/seekbar"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <androidx.appcompat.widget.AppCompatSeekBar
             android:id="@+id/seekbar"
-            android:progress="@={databind.seekBarValue}"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:progress="@={databind.seekBarValue}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/guideline_horizontal" />
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_center" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_seekbar_value"
@@ -36,6 +78,37 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/seekbar" />
-        
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_third_databinding_type"
+            style="@style/ShowreelLabel.Header.Big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/binding_adapter"
+            app:layout_constraintBottom_toTopOf="@id/guideline_horizontal_below_center"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_databind_equation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/edittext_equation"
+            android:inputType="number"
+            android:text="@={databind.equationValue}"
+            app:layout_constraintEnd_toStartOf="@id/tv_databind_equation"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guideline_horizontal_below_center" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_databind_equation"
+            style="@style/ShowreelLabel.Long.Italic.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/et_databind_equation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/et_databind_equation"
+            app:layout_constraintTop_toBottomOf="@id/guideline_horizontal_below_center"
+            app:result="@{String.valueOf(databind.equationValue)}" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
