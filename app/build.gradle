@@ -48,6 +48,12 @@ android {
             }
         }
     }
+
+    apply plugin: 'kotlin-kapt'
+
+    dataBinding {
+        enabled = true
+    }
 }
 
 dependencies {
@@ -65,6 +71,7 @@ dependencies {
     implementation "com.google.android.gms:play-services:$libVersions.playServices"
     implementation "me.dm7.barcodescanner:zxing:$libVersions.zxingScanner"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$toolVersions.kotlinversion"
+    kapt "com.android.databinding:compiler:$toolVersions.compilerversion"
 }
 repositories {
     mavenCentral()

@@ -41,7 +41,9 @@
         <activity
             android:name=".activity.KotlinActivity"
             android:screenOrientation="portrait" />
-
         <activity android:name=".activity.ConfigurationChangesActivity" />
+        <activity
+            android:name=".activity.DataBindingActivity"
+            android:screenOrientation="portrait" />
     </application>
 </manifest>
