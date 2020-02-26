@@ -88,12 +88,9 @@ public class IntentManager {
                 KotlinActivity kotlinActivity = new KotlinActivity();
                 return kotlinActivity.intent(activity);
             case 34:
-                //TODO
-                Toast.makeText(activity, activity.getString(R.string.error_not_implemented), Toast.LENGTH_SHORT).show();
-            case 35:
                 ConfigurationChangesActivity configurationChangesActivity = new ConfigurationChangesActivity();
                 return configurationChangesActivity.intent(activity);
-            case 38:
+            case 37:
                 DataBindingActivity dataBindingActivity = new DataBindingActivity();
                 return dataBindingActivity.intent(activity);
             default:
