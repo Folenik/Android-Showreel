@@ -28,6 +28,7 @@ class DataBindingActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_databind)
         val dataBindingViewModel = DataBindingViewModel()
         binding.databind = dataBindingViewModel
+
     }
 
     fun intent(context: Context): Intent {

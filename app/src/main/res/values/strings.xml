@@ -53,6 +53,19 @@
     <string name="binding_adapter">Custom setter with use of BindingAdapter</string>
     <string name="edittext_equation">How much is 2+2?</string>
 
+    <!-- Fragments strings -->
+    <string name="button_add">Add</string>
+    <string name="button_remove">Remove</string>
+    <string name="button_replace">Replace</string>
+    <string name="button_add_bs">Add BS</string>
+    <string name="button_pop_bs">Pop BS</string>
+    <string name="textview_simple_fragment">Simple fragment</string>
+    <string name="textview_first_fragment">First fragment</string>
+    <string name="textview_second_fragment">Second fragment</string>
+    <string name="textview_third_fragment">Third fragment</string>
+    <string name="textview_fragment_with_date">Fragment, %1$s</string>
+    <string name="no_fragments">There are no fragments.</string>
+
     <!--Permissions-->
     <string name="error_permission_rationale_camera_title">Camera permission</string>
     <string name="error_permission_rationale_camera_description">We need your permission to open a camera - it is nessessary to scan a QR code.</string>

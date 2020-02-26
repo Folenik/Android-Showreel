@@ -4,15 +4,57 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/m_textview"
-        style="@style/ShowreelLabel.Long"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+    <FrameLayout
+        android:id="@+id/fragments_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wrap_constraint"
+        app:layout_constraintBottom_toTopOf="@+id/button_add"
+        app:layout_constraintEnd_toStartOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_add"
+        app:layout_constraintBottom_toTopOf="@id/button_add_bs"
+        app:layout_constraintEnd_toStartOf="@id/button_remove"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_remove"
+        app:layout_constraintBottom_toTopOf="@id/button_add_bs"
+        app:layout_constraintEnd_toStartOf="@id/button_replace"
+        app:layout_constraintStart_toEndOf="@id/button_add" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_replace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_replace"
+        app:layout_constraintBottom_toTopOf="@id/button_add_bs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_remove" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_add_bs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_add_bs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button_pop_bs"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_pop_bs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_pop_bs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_add_bs" />
 </androidx.constraintlayout.widget.ConstraintLayout>
