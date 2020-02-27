@@ -106,6 +106,14 @@
         <item>Volvo</item>
     </string-array>
 
+    <!--IntentDataPassActivity strins-->
+    <string name="button_pass_parcelable_data">PARCELABLE</string>
+    <string name="button_pass_serializable_data">SERIALIZABLE</string>
+    <string name="radio_button_male">Male</string>
+    <string name="radio_button_female">Female</string>
+    <string name="edittext_age">Your age</string>
+    <string name="textview_data_passed">%1$s, you are %2$d years old %3$s.</string>
+
     <!--Permissions-->
     <string name="error_permission_rationale_camera_title">Camera permission</string>
     <string name="error_permission_rationale_camera_description">We need your permission to open a camera - it is nessessary to scan a QR code.</string>

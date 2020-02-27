@@ -2,6 +2,10 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
 
+androidExtensions {
+    experimental = true
+}
+
 android {
     compileSdkVersion toolVersions.android.compileSdk
     buildToolsVersion toolVersions.android.buildTools
@@ -54,6 +58,7 @@ android {
     dataBinding {
         enabled = true
     }
+
 }
 
 dependencies {
