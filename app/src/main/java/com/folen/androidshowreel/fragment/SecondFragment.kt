@@ -7,8 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.folen.androidshowreel.R
 import kotlinx.android.synthetic.main.fragment_second.*
-import java.text.DateFormat
-import java.util.*
+
 
 class SecondFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -18,8 +17,10 @@ class SecondFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        second_fragment_tv.text = getString(R.string.textview_fragment_with_date,
-                DateFormat.getDateTimeInstance().format(Date()).toString())
+        show_dialog_button.setOnClickListener {
+            val dialog = FirstDialogFragment()
+            dialog.setTargetFragment(this@SecondFragment, 1)
+            dialog.show(fragmentManager!!, "MyCustomDialog")
+        }
     }
-
 }

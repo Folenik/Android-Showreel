@@ -59,12 +59,52 @@
     <string name="button_replace">Replace</string>
     <string name="button_add_bs">Add BS</string>
     <string name="button_pop_bs">Pop BS</string>
-    <string name="textview_simple_fragment">Simple fragment</string>
-    <string name="textview_first_fragment">First fragment</string>
-    <string name="textview_second_fragment">Second fragment</string>
-    <string name="textview_third_fragment">Third fragment</string>
+    <string name="button_show_dialog">Show dialog</string>
+    <string name="edittext_your_number">Enter your number.</string>
+    <string name="textview_simple_fragment">Simple fragment.</string>
+    <string name="textview_first_fragment">This is Fragment.</string>
+    <string name="textview_second_fragment">This is Fragment with use of DialogFragment.</string>
+    <string name="textview_third_fragment">This is ListFragment.</string>
     <string name="textview_fragment_with_date">Fragment, %1$s</string>
     <string name="no_fragments">There are no fragments.</string>
+    <string name="listview_item_position">Position: %1$s</string>
+
+    <!-- StringArray for FragmentList -->
+    <string-array name="Cars">
+        <item>Aston Martin</item>
+        <item>Audi</item>
+        <item>Bentley</item>
+        <item>BMW</item>
+        <item>Bugatti</item>
+        <item>Cadillac</item>
+        <item>Chevrolet</item>
+        <item>Chrysler</item>
+        <item>Dodge</item>
+        <item>Fiat</item>
+        <item>Ferrari</item>
+        <item>Ford</item>
+        <item>Honda</item>
+        <item>Hyundai</item>
+        <item>Infiniti</item>
+        <item>Jaguar</item>
+        <item>Jeep</item>
+        <item>Kia</item>
+        <item>Lamborghini</item>
+        <item>Land Rover</item>
+        <item>Lexus</item>
+        <item>Maserati</item>
+        <item>Mazda</item>
+        <item>McLaren</item>
+        <item>Mercedes Benz</item>
+        <item>Mitsubishi</item>
+        <item>Nissan</item>
+        <item>Porsche</item>
+        <item>Rolls Royce</item>
+        <item>Tesla</item>
+        <item>Toyota</item>
+        <item>Volkswagen</item>
+        <item>Volvo</item>
+    </string-array>
 
     <!--Permissions-->
     <string name="error_permission_rationale_camera_title">Camera permission</string>
