@@ -8,14 +8,14 @@ import android.widget.Toast.LENGTH_LONG
 import com.folen.androidshowreel.R
 import com.folen.androidshowreel.base.BaseActivity
 import com.folen.androidshowreel.fragment.SimpleFragment
-import kotlinx.android.synthetic.main.activity_fragments.*
+import kotlinx.android.synthetic.main.activity_fragments_transactions.*
 
 
 class FragmentsTransactionActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_fragments)
+        setContentView(R.layout.activity_fragments_transactions)
 
         button_add.setOnClickListener {
             var simpleFragment = SimpleFragment()
