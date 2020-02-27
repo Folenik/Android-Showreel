@@ -15,6 +15,7 @@ import com.folen.androidshowreel.activity.ConstraintLayoutActivity;
 import com.folen.androidshowreel.activity.DataBindingActivity;
 import com.folen.androidshowreel.activity.FragmentsActivity;
 import com.folen.androidshowreel.activity.FragmentsTransactionActivity;
+import com.folen.androidshowreel.activity.IntentDataPassActivity;
 import com.folen.androidshowreel.activity.KotlinActivity;
 import com.folen.androidshowreel.activity.QRCodeActivity;
 import com.folen.androidshowreel.activity.SharedPrefActivity;
@@ -79,6 +80,9 @@ public class IntentManager {
                         PermissionManager.requestPermission(activity, Manifest.permission.CAMERA, REQUEST_CODE_QR_SCANNER);
                     }
                 }
+            case 9:
+                IntentDataPassActivity intentDataPassActivity = new IntentDataPassActivity();
+                return intentDataPassActivity.intent(activity);
             case 13:
                 FragmentsTransactionActivity fragmentsTransactionActivity = new FragmentsTransactionActivity();
                 return fragmentsTransactionActivity.intent(activity);

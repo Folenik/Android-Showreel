@@ -61,7 +61,8 @@
     "id": 9,
     "name": "Intent data passing - Serializable & Parcelable",
     "description": "Description about Intent data passing - Serializable & Parcelable.",
-    "isDone": "false"
+    "img": "https://www.basilur.pl/wp-content/uploads/2017/10/Question-mark-blackandwhite.png",
+    "isDone": "true"
   },
   {
     "id": 10,
