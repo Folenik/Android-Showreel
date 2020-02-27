@@ -13,6 +13,7 @@ import com.folen.androidshowreel.R;
 import com.folen.androidshowreel.activity.ConfigurationChangesActivity;
 import com.folen.androidshowreel.activity.ConstraintLayoutActivity;
 import com.folen.androidshowreel.activity.DataBindingActivity;
+import com.folen.androidshowreel.activity.FragmentsActivity;
 import com.folen.androidshowreel.activity.FragmentsTransactionActivity;
 import com.folen.androidshowreel.activity.KotlinActivity;
 import com.folen.androidshowreel.activity.QRCodeActivity;
@@ -41,8 +42,8 @@ public class IntentManager {
                 //TODO
                 Toast.makeText(activity, activity.getString(R.string.error_not_implemented), Toast.LENGTH_SHORT).show();
             case 2:
-                //TODO
-                Toast.makeText(activity, activity.getString(R.string.error_not_implemented), Toast.LENGTH_SHORT).show();
+                FragmentsActivity fragmentsActivity = new FragmentsActivity();
+                return fragmentsActivity.intent(activity);
             case 3:
                 //TODO
                 Toast.makeText(activity, activity.getString(R.string.error_not_implemented), Toast.LENGTH_SHORT).show();

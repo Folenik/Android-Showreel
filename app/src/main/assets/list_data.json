@@ -16,8 +16,9 @@
   {
     "id": 2,
     "name": "Fragments",
-    "description": "Description about fragments.",
-    "isDone": "false"
+    "description": "Communication between fragments inside one activity using interfaces.",
+    "img": "https://i.imgur.com/YCpK1Ex.png",
+    "isDone": "true"
   },
   {
     "id": 3,
