@@ -4,57 +4,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <FrameLayout
-        android:id="@+id/fragments_layout"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <fragment
+        android:id="@+id/fragment_top_left"
+        android:name="com.folen.androidshowreel.fragment.FirstFragment"
+        android:layout_width="@dimen/wrap_constraint"
         android:layout_height="@dimen/wrap_constraint"
-        app:layout_constraintBottom_toTopOf="@+id/button_add"
-        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guideline_horizontal"
+        app:layout_constraintEnd_toStartOf="@id/fragment_right"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@id/button_add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_add"
-        app:layout_constraintBottom_toTopOf="@id/button_add_bs"
-        app:layout_constraintEnd_toStartOf="@id/button_remove"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button_remove"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_remove"
-        app:layout_constraintBottom_toTopOf="@id/button_add_bs"
-        app:layout_constraintEnd_toStartOf="@id/button_replace"
-        app:layout_constraintStart_toEndOf="@id/button_add" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button_replace"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_replace"
-        app:layout_constraintBottom_toTopOf="@id/button_add_bs"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/button_remove" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button_add_bs"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_add_bs"
+    <fragment
+        android:id="@+id/fragment_bot_left"
+        android:name="com.folen.androidshowreel.fragment.SecondFragment"
+        android:layout_width="@dimen/wrap_constraint"
+        android:layout_height="@dimen/wrap_constraint"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/button_pop_bs"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@id/fragment_right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_horizontal" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button_pop_bs"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_pop_bs"
+    <fragment
+        android:id="@+id/fragment_right"
+        android:name="com.folen.androidshowreel.fragment.ThirdFragment"
+        android:layout_width="@dimen/wrap_constraint"
+        android:layout_height="@dimen/wrap_constraint"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/button_add_bs" />
+        app:layout_constraintStart_toEndOf="@id/fragment_top_left"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

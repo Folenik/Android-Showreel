@@ -11,7 +11,7 @@ class FragmentsActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_fragment)
+        setContentView(R.layout.activity_fragments)
     }
 
     fun intent(context: Context): Intent {
