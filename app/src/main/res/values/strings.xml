@@ -119,6 +119,11 @@
     <string name="enter_password">Password</string>
     <string name="reenter_password">Re-enter Password</string>
     <string name="enter_nickname">Nickname</string>
+    <string name="wrong_email">This is not real email address.</string>
+    <string name="wrong_password">Passwords does not match.</string>
+    <string name="put_email">Enter your email address.</string>
+    <string name="put_password">Enter your password.</string>
+    <string name="put_nickname">Enter your nickname.</string>
 
     <!--Permissions-->
     <string name="error_permission_rationale_camera_title">Camera permission</string>
