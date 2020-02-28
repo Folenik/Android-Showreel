@@ -96,7 +96,8 @@
   {
     "id": 14,
     "name": "ViewPager & Indicator",
-    "description": "Description about ViewPager & Indicator.",
+    "description": "Allows user to navigate between fragments by swiping.",
+    "img": "https://2.bp.blogspot.com/-RwKPrnDE2z8/V-JxFG5uQjI/AAAAAAAALKI/04NkHriHl4YMn5Bqmhk415O9KYKEn6VcwCLcB/s1600/recyclepager.png",
     "isDone": "true"
   },
   {
