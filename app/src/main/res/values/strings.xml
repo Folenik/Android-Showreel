@@ -114,6 +114,12 @@
     <string name="edittext_age">Your age</string>
     <string name="textview_data_passed">%1$s, you are %2$d years old %3$s.</string>
 
+    <!--Registration fragments strings-->
+    <string name="enter_email">Email</string>
+    <string name="enter_password">Password</string>
+    <string name="reenter_password">Re-enter Password</string>
+    <string name="enter_nickname">Nickname</string>
+
     <!--Permissions-->
     <string name="error_permission_rationale_camera_title">Camera permission</string>
     <string name="error_permission_rationale_camera_description">We need your permission to open a camera - it is nessessary to scan a QR code.</string>
