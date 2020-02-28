@@ -19,6 +19,7 @@ import com.folen.androidshowreel.activity.IntentDataPassActivity;
 import com.folen.androidshowreel.activity.KotlinActivity;
 import com.folen.androidshowreel.activity.QRCodeActivity;
 import com.folen.androidshowreel.activity.SharedPrefActivity;
+import com.folen.androidshowreel.activity.ViewPagerIndicatorActivity;
 import com.folen.androidshowreel.base.BaseActivity;
 import com.folen.androidshowreel.model.Feature;
 
@@ -86,6 +87,9 @@ public class IntentManager {
             case 13:
                 FragmentsTransactionActivity fragmentsTransactionActivity = new FragmentsTransactionActivity();
                 return fragmentsTransactionActivity.intent(activity);
+            case 14:
+                ViewPagerIndicatorActivity viewPagerIndicatorActivity = new ViewPagerIndicatorActivity();
+                return viewPagerIndicatorActivity.intent(activity);
             case 31:
                 SharedPrefActivity sharedPrefActivity = new SharedPrefActivity();
                 return sharedPrefActivity.intent(activity);
