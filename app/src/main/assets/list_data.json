@@ -103,8 +103,9 @@
   {
     "id": 15,
     "name": "Sliding registration form",
-    "description": "Description about Sliding registration form.",
-    "isDone": "false"
+    "description": "With use of ViewPager2.",
+    "img": "https://cdn.iconscout.com/icon/free/png-256/registration-1521633-1288259.png",
+    "isDone": "true"
   },
   {
     "id": 16,
