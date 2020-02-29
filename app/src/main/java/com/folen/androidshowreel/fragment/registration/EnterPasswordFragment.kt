@@ -21,7 +21,7 @@ class EnterPasswordFragment : CustomFragmentWithInterface() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        next_fragment_arrow.setOnClickListener {
+        next_fragment_button.setOnClickListener {
             checkIfPasswordIsProper()
         }
     }

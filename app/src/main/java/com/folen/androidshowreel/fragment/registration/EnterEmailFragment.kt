@@ -24,7 +24,7 @@ class EnterEmailFragment : CustomFragmentWithInterface() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        next_fragment_arrow.setOnClickListener {
+        next_fragment_button.setOnClickListener {
             checkIfEmailIsProper()
         }
     }
@@ -42,6 +42,6 @@ class EnterEmailFragment : CustomFragmentWithInterface() {
 
     private fun putEmailToSharedPref(email: String) {
         val prefs: SharedPreferences = activity!!.getSharedPreferences(Const.REGISTER_SHARED_PREF, MODE_PRIVATE)
-        prefs.edit().putString("email",email).commit()
+        prefs.edit().putString("email", email).commit()
     }
 }
