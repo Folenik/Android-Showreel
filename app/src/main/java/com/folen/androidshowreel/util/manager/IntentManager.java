@@ -20,6 +20,7 @@ import com.folen.androidshowreel.activity.KotlinActivity;
 import com.folen.androidshowreel.activity.QRCodeActivity;
 import com.folen.androidshowreel.activity.SharedPrefActivity;
 import com.folen.androidshowreel.activity.SlidingRegistrationFormActivity;
+import com.folen.androidshowreel.activity.SnackBarActivity;
 import com.folen.androidshowreel.activity.ViewPagerIndicatorActivity;
 import com.folen.androidshowreel.base.BaseActivity;
 import com.folen.androidshowreel.model.Feature;
@@ -94,6 +95,9 @@ public class IntentManager {
             case 15:
                 SlidingRegistrationFormActivity slidingRegistrationFormActivity = new SlidingRegistrationFormActivity();
                 return slidingRegistrationFormActivity.intent(activity);
+            case 17:
+                SnackBarActivity snackBarActivity = new SnackBarActivity();
+                return snackBarActivity.intent(activity);
             case 31:
                 SharedPrefActivity sharedPrefActivity = new SharedPrefActivity();
                 return sharedPrefActivity.intent(activity);
