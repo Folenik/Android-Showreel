@@ -38,7 +38,11 @@ class FragmentsTransactionActivity : BaseActivity() {
         button_add_bs.setOnClickListener {
             var simpleFragment = SimpleFragment()
             supportFragmentManager.beginTransaction().add(R.id.fragments_layout, simpleFragment).addToBackStack(null).commit()
+        }
 
+        button_replace_bs.setOnClickListener {
+            var simpleFragment = SimpleFragment()
+            supportFragmentManager.beginTransaction().replace(R.id.fragments_layout, simpleFragment).addToBackStack(null).commit()
         }
 
         button_pop_bs.setOnClickListener {
