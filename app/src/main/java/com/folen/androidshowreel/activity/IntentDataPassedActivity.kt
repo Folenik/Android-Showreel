@@ -41,11 +41,12 @@ class IntentDataPassedActivity : AppCompatActivity() {
         }
     }
 
+
     private fun getSerializableData() {
         try {
             try {
-                val serializableArray =
-                        intent.extras?.getSerializable("Serializable") as ArrayList<SerializableModel>
+                @Suppress("UNCHECKED_CAST")
+                val serializableArray = intent.extras?.getSerializable("Serializable") as ArrayList<SerializableModel>
 
                 data_passed_textview.text = getString(R.string.textview_data_passed,
                         serializableArray[0].name,

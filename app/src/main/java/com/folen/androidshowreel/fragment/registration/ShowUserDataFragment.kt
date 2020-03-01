@@ -24,7 +24,7 @@ class ShowUserDataFragment() : Fragment() {
 
     private fun retrieveDataAndSetTextViews() {
         val prefs: SharedPreferences = activity!!.getSharedPreferences(Const.REGISTER_SHARED_PREF, Context.MODE_PRIVATE)
-        val password: String = prefs.getString("password", "password")
+        val password: String = prefs.getString("password", "password") as String
         var newPassword: String = ""
 
         email_textview.text = prefs.getString("email", "email")
