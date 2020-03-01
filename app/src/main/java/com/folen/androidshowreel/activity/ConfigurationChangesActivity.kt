@@ -33,11 +33,10 @@ class ConfigurationChangesActivity : AppCompatActivity() {
 
     override fun onRestoreInstanceState(extra: Bundle) {
         super.onRestoreInstanceState(extra)
-        if (extra != null) {
-            et_name.setText(extra.getString("name"))
-            et_login.setText(extra.getString("login"))
-            et_password.setText(extra.getString("password"))
-            et_retype_password.setText(extra.getString("retype_password"))
-        }
+
+        et_name.setText(extra.getString("name"))
+        et_login.setText(extra.getString("login"))
+        et_password.setText(extra.getString("password"))
+        et_retype_password.setText(extra.getString("retype_password"))
     }
 }

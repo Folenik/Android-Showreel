@@ -7,6 +7,8 @@ import android.os.Bundle;
 import androidx.annotation.RequiresPermission;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
+
 import android.widget.FrameLayout;
 
 import com.folen.androidshowreel.R;
@@ -42,7 +44,7 @@ public class QRCodeActivity extends BaseActivity implements ZXingScannerView.Res
 
         mScannerView = new ZXingScannerView(this);
         sContentFrame.addView(mScannerView);
-        mToolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
+        mToolbar.setTitleTextColor(ContextCompat.getColor(getApplicationContext(),R.color.white));
         mToolbar.setTitle(R.string.qr_feature_name);
     }
 

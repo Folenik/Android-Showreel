@@ -3,9 +3,9 @@ package com.folen.androidshowreel.model
 import android.os.Parcel
 import android.os.Parcelable
 
-data class ParcelableModel(val name: String,
+data class ParcelableModel(val name: String?,
                            val age: Int,
-                           val gender: String) : Parcelable {
+                           val gender: String?) : Parcelable {
     constructor(parcel: Parcel) : this(
             parcel.readString(),
             parcel.readInt(),

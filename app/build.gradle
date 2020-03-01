@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
 
 androidExtensions {
     experimental = true
@@ -53,8 +54,6 @@ android {
         }
     }
 
-    apply plugin: 'kotlin-kapt'
-
     dataBinding {
         enabled = true
     }
@@ -68,14 +67,14 @@ dependencies {
     implementation "androidx.constraintlayout:constraintlayout:$libVersions.constraint"
     implementation "com.google.android.material:material:$libVersions.material"
     implementation "androidx.cardview:cardview:$libVersions.mainversion"
-
     implementation "com.mikepenz:fastadapter-commons:$libVersions.fastAdapter"
     implementation "com.google.code.gson:gson:$libVersions.gson"
     implementation "com.github.bumptech.glide:glide:$libVersions.glide"
-    annotationProcessor "com.github.bumptech.glide:compiler:$libVersions.glide"
     implementation "com.google.android.gms:play-services:$libVersions.playServices"
     implementation "me.dm7.barcodescanner:zxing:$libVersions.zxingScanner"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$toolVersions.kotlinversion"
+
+    kapt "com.github.bumptech.glide:compiler:$libVersions.glide"
     kapt "com.android.databinding:compiler:$toolVersions.compilerversion"
 }
 repositories {

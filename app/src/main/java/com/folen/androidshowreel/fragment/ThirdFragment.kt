@@ -1,5 +1,6 @@
 package com.folen.androidshowreel.fragment
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -21,7 +22,7 @@ class ThirdFragment : ListFragment(), AdapterView.OnItemClickListener {
         super.onActivityCreated(savedInstanceState)
 
         third_fragment_tv.text = getString(R.string.textview_third_fragment)
-        val adapter: ArrayAdapter<*> = ArrayAdapter.createFromResource(activity,
+        val adapter: ArrayAdapter<*> = ArrayAdapter.createFromResource(context as Context,
                 R.array.Cars, android.R.layout.simple_list_item_1)
         listAdapter = adapter
         listView.onItemClickListener = this
