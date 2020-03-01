@@ -159,8 +159,9 @@
   {
     "id": 24,
     "name": "WebView + JS",
-    "description": "Description about WebView + JS.",
-    "isDone": "false"
+    "description": "Displays Google search page without logo and footer",
+    "img": "https://i2.wp.com/www.hardill.me.uk/wordpress/wp-content/uploads/2016/11/domain-registration.png",
+    "isDone": "true"
   },
   {
     "id": 25,
