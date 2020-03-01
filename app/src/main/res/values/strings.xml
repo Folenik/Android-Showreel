@@ -59,6 +59,7 @@
     <string name="button_replace">Replace</string>
     <string name="button_add_bs">Add BS</string>
     <string name="button_pop_bs">Pop BS</string>
+    <string name="button_replace_bs">Replace BS</string>
     <string name="button_show_dialog">Show dialog</string>
     <string name="edittext_your_number">Enter your number.</string>
     <string name="textview_simple_fragment">Simple fragment.</string>

@@ -46,8 +46,17 @@
         android:layout_height="wrap_content"
         android:text="@string/button_add_bs"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/button_pop_bs"
+        app:layout_constraintEnd_toStartOf="@id/button_replace_bs"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_replace_bs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_replace_bs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button_pop_bs"
+        app:layout_constraintStart_toEndOf="@id/button_add_bs" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_pop_bs"
@@ -56,5 +65,5 @@
         android:text="@string/button_pop_bs"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/button_add_bs" />
+        app:layout_constraintStart_toEndOf="@id/button_replace_bs" />
 </androidx.constraintlayout.widget.ConstraintLayout>
