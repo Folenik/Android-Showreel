@@ -18,4 +18,6 @@ public final class Const {
 
     public static final String REGISTER_SHARED_PREF = "RegisterSharedPreferences";
 
+    public static final String WEBVIEW_PAGE_URL = "https://www.google.pl/";
+
 }
