@@ -125,6 +125,15 @@
     <string name="put_password">Enter your password.</string>
     <string name="put_nickname">Enter your nickname.</string>
 
+    <!--SnackBarActivity strings-->
+    <string name="button_snackbar">SNACK</string>
+    <string name="tv_show_snackbar">Show basic snackbar.</string>
+    <string name="tv_show_snackbar_dismiss">Show snackbar with dismiss option.</string>
+    <string name="tv_show_snackbar_action">Show snackbar with action option.</string>
+    <string name="snackbar_simple">Simple snackbar</string>
+    <string name="snackbar_change_background">Background color changed.</string>
+    <string name="snackbar_dismiss">You clicked second button.</string>
+
     <!--Permissions-->
     <string name="error_permission_rationale_camera_title">Camera permission</string>
     <string name="error_permission_rationale_camera_description">We need your permission to open a camera - it is nessessary to scan a QR code.</string>
@@ -133,5 +142,7 @@
     <!--Dialogs-->
     <string name="cancel">Cancel</string>
     <string name="ok">Ok</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="undo">Undo</string>
 
 </resources>
