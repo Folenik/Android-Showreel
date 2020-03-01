@@ -141,6 +141,19 @@
     <string name="span_string_type_three">TODO list:\neat \nsleep</string>
     <string name="span_string_type_four">Look at my android</string>
 
+    <!--DialogActivity strings-->
+    <string name="simple_dialog_button">Simple dialog</string>
+    <string name="list_dialog_button">Dialog with list</string>
+    <string name="multiple_list_dialog_button">Dialog with multi-choice list</string>
+    <string name="custom_dialog_button">Custom dialog</string>
+    <string name="edittext_dialog_button">Dialog with EditText</string>
+    <string name="alert_give_money_title">Give money?</string>
+    <string name="alert_give_money_message">We are poor company. We want your help</string>
+    <string name="alert_list_item">Choose your favourite car brand.</string>
+    <string name="alert_multiple_list_item">Describe yourself.</string>
+    <string name="alert_edittext">Type your nickname.</string>
+    <string name="dialog_textview">This is custom dialog.\nThis is custom dialog.\nThis is custom dialog.</string>
+
     <!--Permissions-->
     <string name="error_permission_rationale_camera_title">Camera permission</string>
     <string name="error_permission_rationale_camera_description">We need your permission to open a camera - it is nessessary to scan a QR code.</string>
@@ -151,5 +164,7 @@
     <string name="ok">Ok</string>
     <string name="dismiss">Dismiss</string>
     <string name="undo">Undo</string>
+    <string name="agree">Agree</string>
+    <string name="disagree">Disagree</string>
 
 </resources>

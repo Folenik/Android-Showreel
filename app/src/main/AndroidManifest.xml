@@ -63,11 +63,17 @@
         <activity
             android:name=".activity.SlidingRegistrationFormActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".activity.SnackBarActivity"
+        <activity
+            android:name=".activity.SnackBarActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".activity.WebViewActivity"
+        <activity
+            android:name=".activity.WebViewActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".activity.SpannableActivity"
+        <activity
+            android:name=".activity.SpannableActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DialogsActivity"
             android:screenOrientation="portrait" />
     </application>
 </manifest>

@@ -24,7 +24,8 @@
     "id": 3,
     "name": "Dialogs",
     "description": "Description about dialogs.",
-    "isDone": "false"
+    "img": "https://i.stack.imgur.com/B3K9N.png",
+    "isDone": "true"
   },
   {
     "id": 4,
