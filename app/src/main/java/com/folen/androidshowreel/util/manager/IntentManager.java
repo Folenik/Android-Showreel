@@ -21,6 +21,7 @@ import com.folen.androidshowreel.activity.QRCodeActivity;
 import com.folen.androidshowreel.activity.SharedPrefActivity;
 import com.folen.androidshowreel.activity.SlidingRegistrationFormActivity;
 import com.folen.androidshowreel.activity.SnackBarActivity;
+import com.folen.androidshowreel.activity.SpannableActivity;
 import com.folen.androidshowreel.activity.ViewPagerIndicatorActivity;
 import com.folen.androidshowreel.activity.WebViewActivity;
 import com.folen.androidshowreel.base.BaseActivity;
@@ -102,6 +103,9 @@ public class IntentManager {
             case 24:
                 WebViewActivity webViewActivity = new WebViewActivity();
                 return webViewActivity.intent(activity);
+            case 29:
+                SpannableActivity spannableActivity = new SpannableActivity();
+                return spannableActivity.intent(activity);
             case 31:
                 SharedPrefActivity sharedPrefActivity = new SharedPrefActivity();
                 return sharedPrefActivity.intent(activity);
