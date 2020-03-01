@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="Theme.Showreel" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowBackground">@color/white</item>
         <item name="android:windowFullscreen">false</item>
@@ -8,4 +9,5 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:textColorLink">@color/colorAccent</item>
     </style>
+
 </resources>
