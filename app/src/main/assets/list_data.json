@@ -117,7 +117,8 @@
     "id": 17,
     "name": "Snackbar",
     "description": "Description about Snackbar.",
-    "isDone": "false"
+    "img": "https://i1.wp.com/www.cssscript.com/wp-content/uploads/2017/07/HotSnackbar.png?fit=467%2C344&ssl=1",
+    "isDone": "true"
   },
   {
     "id": 18,

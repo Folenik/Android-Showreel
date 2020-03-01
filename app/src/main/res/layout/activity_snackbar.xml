@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/show_snackbar_textview"
+        style="@style/ShowreelLabel.Long"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_show_snackbar"
+        app:layout_constraintBottom_toTopOf="@id/show_snackbar_dismiss_textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/show_snackbar_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_snackbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/show_snackbar_textview" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/show_snackbar_dismiss_textview"
+        style="@style/ShowreelLabel.Long"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_show_snackbar_dismiss"
+        app:layout_constraintBottom_toTopOf="@id/show_snackbar_action_textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/show_snackbar_textview" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/show_snackbar_dismiss_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_snackbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/show_snackbar_dismiss_textview" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/show_snackbar_action_textview"
+        style="@style/ShowreelLabel.Long"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_show_snackbar_action"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/show_snackbar_dismiss_textview" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/show_snackbar_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_snackbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/show_snackbar_action_textview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
