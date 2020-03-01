@@ -191,7 +191,8 @@
     "id": 29,
     "name": "Spannable",
     "description": "Description about Spannable.",
-    "isDone": "false"
+    "img" :"https://www.basilur.pl/wp-content/uploads/2017/10/Question-mark-blackandwhite.png",
+    "isDone": "true"
   },
   {
     "id": 30,
