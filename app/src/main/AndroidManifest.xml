@@ -75,5 +75,8 @@
         <activity
             android:name=".activity.DialogsActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BottomNavigationActivity"
+            android:screenOrientation="portrait" />
     </application>
 </manifest>
