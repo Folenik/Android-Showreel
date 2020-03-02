@@ -159,6 +159,18 @@
     <string name="fragment_second_nav">Frag2</string>
     <string name="fragment_third_nav">Frag3</string>
 
+    <!-- BottomSheetActivity strings -->
+    <string name="persistent_bottom_sheet">Persistent bottom sheet</string>
+    <string name="modal_bottom_sheet">Modal bottom sheet</string>
+    <string name="bottom_sheet_persistent_tv1">This is persistent Bottom Sheet</string>
+    <string name="bottom_sheet_persistent_tv2">Welcome to Android Showreel</string>
+    <string name="bottom_sheet_persistent_tv3">Join our community</string>
+    <string name="bottom_sheet_persistent_button">Join us</string>
+    <string name="bottom_sheet_modal_tv1">This is modal Bottom Sheet</string>
+    <string name="bottom_sheet_modal_tv2">Welcome to Android Showreel</string>
+    <string name="bottom_sheet_modal_tv3">Join our community</string>
+    <string name="bottom_sheet_modal_button">Join us</string>
+
     <!--Permissions-->
     <string name="error_permission_rationale_camera_title">Camera permission</string>
     <string name="error_permission_rationale_camera_description">We need your permission to open a camera - it is nessessary to scan a QR code.</string>
@@ -171,5 +183,6 @@
     <string name="undo">Undo</string>
     <string name="agree">Agree</string>
     <string name="disagree">Disagree</string>
+
 
 </resources>
