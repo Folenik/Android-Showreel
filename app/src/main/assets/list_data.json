@@ -31,7 +31,8 @@
     "id": 4,
     "name": "BottomNavigation",
     "description": "Description about BottomNavigation.",
-    "isDone": "false"
+    "img": "https://www.basilur.pl/wp-content/uploads/2017/10/Question-mark-blackandwhite.png",
+    "isDone": "true"
   },
   {
     "id": 5,
