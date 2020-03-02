@@ -38,7 +38,8 @@
     "id": 5,
     "name": "BottomSheetFragment",
     "description": "Description about BottomSheetFragment.",
-    "isDone": "false"
+    "img": "https://www.basilur.pl/wp-content/uploads/2017/10/Question-mark-blackandwhite.png",
+    "isDone": "true"
   },
   {
     "id": 6,

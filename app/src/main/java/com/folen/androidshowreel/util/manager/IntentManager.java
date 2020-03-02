@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 
 import com.folen.androidshowreel.R;
 import com.folen.androidshowreel.activity.BottomNavigationActivity;
+import com.folen.androidshowreel.activity.BottomSheetActivity;
 import com.folen.androidshowreel.activity.ConfigurationChangesActivity;
 import com.folen.androidshowreel.activity.ConstraintLayoutActivity;
 import com.folen.androidshowreel.activity.DataBindingActivity;
@@ -59,8 +60,8 @@ public class IntentManager {
                 BottomNavigationActivity bottomNavigationActivity = new BottomNavigationActivity();
                 return bottomNavigationActivity.intent(activity);
             case 5:
-                //TODO
-                Toast.makeText(activity, activity.getString(R.string.error_not_implemented), Toast.LENGTH_SHORT).show();
+                BottomSheetActivity bottomSheetActivity = new BottomSheetActivity();
+                return bottomSheetActivity.intent(activity);
             case 6:
                 //TODO
                 Toast.makeText(activity, activity.getString(R.string.error_not_implemented), Toast.LENGTH_SHORT).show();
