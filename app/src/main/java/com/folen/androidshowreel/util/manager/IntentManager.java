@@ -26,10 +26,13 @@ import com.folen.androidshowreel.activity.SharedPrefActivity;
 import com.folen.androidshowreel.activity.SlidingRegistrationFormActivity;
 import com.folen.androidshowreel.activity.SnackBarActivity;
 import com.folen.androidshowreel.activity.SpannableActivity;
+import com.folen.androidshowreel.activity.TextInputLayoutActivity;
 import com.folen.androidshowreel.activity.ViewPagerIndicatorActivity;
 import com.folen.androidshowreel.activity.WebViewActivity;
 import com.folen.androidshowreel.base.BaseActivity;
 import com.folen.androidshowreel.model.Feature;
+
+import org.w3c.dom.Text;
 
 import static com.folen.androidshowreel.util.Const.REQUEST_CODE_QR_SCANNER;
 
@@ -110,6 +113,9 @@ public class IntentManager {
             case 24:
                 WebViewActivity webViewActivity = new WebViewActivity();
                 return webViewActivity.intent(activity);
+            case 25:
+                TextInputLayoutActivity textInputLayoutActivity = new TextInputLayoutActivity();
+                return textInputLayoutActivity.intent(activity);
             case 29:
                 SpannableActivity spannableActivity = new SpannableActivity();
                 return spannableActivity.intent(activity);

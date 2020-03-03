@@ -84,5 +84,8 @@
         <activity
             android:name=".activity.AutoCompleteEditTextActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TextInputLayoutActivity"
+            android:screenOrientation="portrait" />
     </application>
 </manifest>
