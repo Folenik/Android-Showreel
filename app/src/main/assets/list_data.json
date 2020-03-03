@@ -145,7 +145,8 @@
     "id": 21,
     "name": "AutoCompleteEditText",
     "description": "Description about AutoCompleteEditText",
-    "isDone": "false"
+    "img": "https://www.basilur.pl/wp-content/uploads/2017/10/Question-mark-blackandwhite.png",
+    "isDone": "true"
   },
   {
     "id": 22,
