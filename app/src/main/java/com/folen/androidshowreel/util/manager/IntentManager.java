@@ -10,6 +10,7 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 
 import com.folen.androidshowreel.R;
+import com.folen.androidshowreel.activity.AutoCompleteEditTextActivity;
 import com.folen.androidshowreel.activity.BottomNavigationActivity;
 import com.folen.androidshowreel.activity.BottomSheetActivity;
 import com.folen.androidshowreel.activity.ConfigurationChangesActivity;
@@ -103,6 +104,9 @@ public class IntentManager {
             case 17:
                 SnackBarActivity snackBarActivity = new SnackBarActivity();
                 return snackBarActivity.intent(activity);
+            case 21:
+                AutoCompleteEditTextActivity autoCompleteEditTextActivity = new AutoCompleteEditTextActivity();
+                return autoCompleteEditTextActivity.intent(activity);
             case 24:
                 WebViewActivity webViewActivity = new WebViewActivity();
                 return webViewActivity.intent(activity);

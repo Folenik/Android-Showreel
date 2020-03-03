@@ -171,6 +171,10 @@
     <string name="bottom_sheet_modal_tv3">Join our community</string>
     <string name="bottom_sheet_modal_button">Join us</string>
 
+    <!-- AutoCompleteEditTextActivity strings -->
+    <string name="autocomplete_description_tv">TextView with autocomplete:</string>
+    <string name="choose_country_tv">Choose your country</string>
+
     <!--Permissions-->
     <string name="error_permission_rationale_camera_title">Camera permission</string>
     <string name="error_permission_rationale_camera_description">We need your permission to open a camera - it is nessessary to scan a QR code.</string>
