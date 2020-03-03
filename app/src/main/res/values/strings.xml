@@ -175,6 +175,12 @@
     <string name="autocomplete_description_tv">TextView with autocomplete:</string>
     <string name="choose_country_tv">Choose your country</string>
 
+    <!-- TextInputLayoutActivity strings -->
+    <string name="username_tv">Username</string>
+    <string name="password_tv">Password</string>
+    <string name="login_button">Login</string>
+    <string name="no_account">No account yet?\nCreate one.</string>
+
     <!--Permissions-->
     <string name="error_permission_rationale_camera_title">Camera permission</string>
     <string name="error_permission_rationale_camera_description">We need your permission to open a camera - it is nessessary to scan a QR code.</string>
@@ -187,6 +193,7 @@
     <string name="undo">Undo</string>
     <string name="agree">Agree</string>
     <string name="disagree">Disagree</string>
+    <string name="click">Click</string>
 
 
 </resources>

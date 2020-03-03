@@ -11,7 +11,6 @@
     "name": "Dependency Injection",
     "description": "Description about Dependency Injection.",
     "isDone": "false"
-
   },
   {
     "id": 2,
@@ -72,21 +71,18 @@
     "name": "Loading image from gallery",
     "description": "Description about Loading image from gallery.",
     "isDone": "false"
-
   },
   {
     "id": 11,
     "name": "Gesture detector",
     "description": "Description about Gesture detector.",
     "isDone": "false"
-
   },
   {
     "id": 12,
     "name": "Basic Animations",
     "description": "Description about Animations.",
     "isDone": "false"
-
   },
   {
     "id": 13,
@@ -94,7 +90,6 @@
     "description": "Basic fragment transactions with or without backstack.",
     "img": "https://www.basilur.pl/wp-content/uploads/2017/10/Question-mark-blackandwhite.png",
     "isDone": "true"
-
   },
   {
     "id": 14,
@@ -171,7 +166,8 @@
     "id": 25,
     "name": "TextInputLayout",
     "description": "Description about TextInputLayout.",
-    "isDone": "false"
+    "img": "https://www.basilur.pl/wp-content/uploads/2017/10/Question-mark-blackandwhite.png",
+    "isDone": "true"
   },
   {
     "id": 26,
@@ -195,7 +191,7 @@
     "id": 29,
     "name": "Spannable",
     "description": "Description about Spannable.",
-    "img" :"https://www.basilur.pl/wp-content/uploads/2017/10/Question-mark-blackandwhite.png",
+    "img": "https://www.basilur.pl/wp-content/uploads/2017/10/Question-mark-blackandwhite.png",
     "isDone": "true"
   },
   {
