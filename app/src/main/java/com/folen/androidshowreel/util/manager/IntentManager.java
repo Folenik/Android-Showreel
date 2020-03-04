@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 
 import com.folen.androidshowreel.R;
 import com.folen.androidshowreel.activity.AutoCompleteEditTextActivity;
+import com.folen.androidshowreel.activity.BitmapsActivity;
 import com.folen.androidshowreel.activity.BottomNavigationActivity;
 import com.folen.androidshowreel.activity.BottomSheetActivity;
 import com.folen.androidshowreel.activity.ConfigurationChangesActivity;
@@ -128,6 +129,9 @@ public class IntentManager {
             case 34:
                 ConfigurationChangesActivity configurationChangesActivity = new ConfigurationChangesActivity();
                 return configurationChangesActivity.intent(activity);
+            case 36:
+                BitmapsActivity bitmapsActivity = new BitmapsActivity();
+                return bitmapsActivity.intent(activity);
             case 37:
                 DataBindingActivity dataBindingActivity = new DataBindingActivity();
                 return dataBindingActivity.intent(activity);
