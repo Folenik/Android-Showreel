@@ -181,6 +181,13 @@
     <string name="login_button">Login</string>
     <string name="no_account">No account yet?\nCreate one.</string>
 
+    <!-- BitmapActivity strings -->
+    <string name="scale_up_button">Scale up</string>
+    <string name="scale_down_button">Scale down</string>
+    <string name="invert_colors_button">Invert colors</string>
+    <string name="make_grayscale_button">Make colorless</string>
+    <string name="reset_button">Reset</string>
+
     <!--Permissions-->
     <string name="error_permission_rationale_camera_title">Camera permission</string>
     <string name="error_permission_rationale_camera_description">We need your permission to open a camera - it is nessessary to scan a QR code.</string>

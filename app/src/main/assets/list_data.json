@@ -237,7 +237,8 @@
     "id": 36,
     "name": "Bitmaps",
     "description": "Description about Bitmaps.",
-    "isDone": "false"
+    "img": "https://fr.seaicons.com/wp-content/uploads/2015/07/bmp-icon1.png",
+    "isDone": "true"
   },
   {
     "id": 37,
