@@ -22,6 +22,7 @@ import com.folen.androidshowreel.activity.FragmentsActivity;
 import com.folen.androidshowreel.activity.FragmentsTransactionActivity;
 import com.folen.androidshowreel.activity.IntentDataPassActivity;
 import com.folen.androidshowreel.activity.KotlinActivity;
+import com.folen.androidshowreel.activity.MultiLanguageActivity;
 import com.folen.androidshowreel.activity.QRCodeActivity;
 import com.folen.androidshowreel.activity.SharedPrefActivity;
 import com.folen.androidshowreel.activity.SlidingRegistrationFormActivity;
@@ -120,6 +121,9 @@ public class IntentManager {
             case 29:
                 SpannableActivity spannableActivity = new SpannableActivity();
                 return spannableActivity.intent(activity);
+            case 30:
+                MultiLanguageActivity multiLanguageActivity = new MultiLanguageActivity();
+                return multiLanguageActivity.intent(activity);
             case 31:
                 SharedPrefActivity sharedPrefActivity = new SharedPrefActivity();
                 return sharedPrefActivity.intent(activity);
