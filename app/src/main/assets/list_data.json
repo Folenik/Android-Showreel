@@ -153,7 +153,8 @@
     "id": 23,
     "name": "Local notifications",
     "description": "Description about Local notifications.",
-    "isDone": "false"
+    "img": "https://www.androidfreeware.net/img2/notifybuddy--amoled-notification-light.jpg",
+    "isDone": "true"
   },
   {
     "id": 24,

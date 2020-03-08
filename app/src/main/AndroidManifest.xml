@@ -93,5 +93,8 @@
         <activity
             android:name=".activity.MultiLanguageActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LocalNotificationsActivity"
+            android:screenOrientation="portrait" />
     </application>
 </manifest>
