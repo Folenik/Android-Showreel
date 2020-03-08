@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Android Showreel</string>
+    <string name="edittext_name">Ihr Name</string>
+    <string name="edittext_login">Ihre Anmeldung</string>
+    <string name="edittext_password">Ihr Passwort</string>
+    <string name="edittext_retype_password">Passwort erneut eingeben</string>
+    <string name="button_register">Registrieren</string>
+    <string name="button_change_language">Sprache wechseln</string>
+    <string name="hello_tv">Hallo!</string>
+</resources>

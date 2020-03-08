@@ -2,42 +2,42 @@
     <string name="app_name">Android Showreel</string>
 
     <!--Main menu-->
-    <string name="list_item_name">Name</string>
-    <string name="list_item_description">Description</string>
+    <string name="list_item_name" translatable="false">Name</string>
+    <string name="list_item_description" translatable="false">Description</string>
 
     <!--Errors-->
-    <string name="error_list_loading">Error occurred on loading list process.</string>
-    <string name="error_not_implemented">Sorry! This feature is currently not implemented</string>
+    <string name="error_list_loading" translatable="false">Error occurred on loading list process.</string>
+    <string name="error_not_implemented" translatable="false">Sorry! This feature is currently not implemented</string>
 
 
     <!-- MainActivity checkboxes -->
-    <string name="checkbox_all_items">All items</string>
-    <string name="checkbox_done_items">Done items</string>
-    <string name="checkbox_todo_items">TODO items</string>
+    <string name="checkbox_all_items" translatable="false">All items</string>
+    <string name="checkbox_done_items" translatable="false">Done items</string>
+    <string name="checkbox_todo_items" translatable="false">TODO items</string>
 
     <!--Constraint Layout Activity-->
-    <string name="button_explore">Explore</string>
-    <string name="button_motors">Motors</string>
-    <string name="button_classified">Classified</string>
-    <string name="button_services">Services</string>
-    <string name="button_properties">Properties</string>
-    <string name="button_jobs">Jobs</string>
-    <string name="constraint_item_name">Popular Trending</string>
-    <string name="constraint_item_view">View all</string>
-    <string name="constraint_value">Play Station</string>
+    <string name="button_explore" translatable="false">Explore</string>
+    <string name="button_motors" translatable="false">Motors</string>
+    <string name="button_classified" translatable="false">Classified</string>
+    <string name="button_services" translatable="false">Services</string>
+    <string name="button_properties" translatable="false">Properties</string>
+    <string name="button_jobs" translatable="false">Jobs</string>
+    <string name="constraint_item_name" translatable="false">Popular Trending</string>
+    <string name="constraint_item_view" translatable="false">View all</string>
+    <string name="constraint_value" translatable="false">Play Station</string>
 
     <!-- QR Scanner strings -->
-    <string name="qr_feature_name">QR Code scanner</string>
-    <string name="qr_code">QR CODE: %s</string>
+    <string name="qr_feature_name" translatable="false">QR Code scanner</string>
+    <string name="qr_code" translatable="false">QR CODE: %s</string>
 
     <!-- KotlinActivity strings -->
-    <string name="textview_was_born">%1$s was born in: %2$d</string>
+    <string name="textview_was_born" translatable="false">%1$s was born in: %2$d</string>
 
 
     <!-- SharedPrefActivity strins -->
-    <string name="textview_seek_bar_changes">Last saved value of SeekBar: %1$d \n Times you saved the value: %2$d</string>
-    <string name="value_not_set">There is no value in SharedPref</string>
-    <string name="seek_bar_default_value">Default SeekBar value saved.</string>
+    <string name="textview_seek_bar_changes" translatable="false">Last saved value of SeekBar: %1$d \n Times you saved the value: %2$d</string>
+    <string name="value_not_set" translatable="false">There is no value in SharedPref</string>
+    <string name="seek_bar_default_value" translatable="false">Default SeekBar value saved.</string>
 
     <!-- ConfigurationChangesActivity strings -->
     <string name="edittext_name">Your name</string>
@@ -45,30 +45,30 @@
     <string name="edittext_password">Your password</string>
     <string name="edittext_retype_password">Re-type password</string>
     <string name="button_register">Register</string>
-    <string name="registered">Registered</string>
+    <string name="registered" translatable="false">Registered</string>
 
     <!-- DataBindingActivity strings -->
-    <string name="databinding">Simple databinding</string>
-    <string name="two_way_databinding">Two way databinding</string>
-    <string name="binding_adapter">Custom setter with use of BindingAdapter</string>
-    <string name="edittext_equation">How much is 2+2?</string>
+    <string name="databinding" translatable="false">Simple databinding</string>
+    <string name="two_way_databinding" translatable="false">Two way databinding</string>
+    <string name="binding_adapter" translatable="false">Custom setter with use of BindingAdapter</string>
+    <string name="edittext_equation" translatable="false">How much is 2+2?</string>
 
     <!-- Fragments strings -->
-    <string name="button_add">Add</string>
-    <string name="button_remove">Remove</string>
-    <string name="button_replace">Replace</string>
-    <string name="button_add_bs">Add BS</string>
-    <string name="button_pop_bs">Pop BS</string>
-    <string name="button_replace_bs">Replace BS</string>
-    <string name="button_show_dialog">Show dialog</string>
-    <string name="edittext_your_number">Enter your number.</string>
-    <string name="textview_simple_fragment">Simple fragment.</string>
-    <string name="textview_first_fragment">This is Fragment.</string>
-    <string name="textview_second_fragment">This is Fragment with use of DialogFragment.</string>
-    <string name="textview_third_fragment">This is ListFragment.</string>
-    <string name="textview_fragment_with_date">Fragment, %1$s</string>
-    <string name="no_fragments">There are no fragments.</string>
-    <string name="listview_item_position">Position: %1$s</string>
+    <string name="button_add" translatable="false">Add</string>
+    <string name="button_remove" translatable="false">Remove</string>
+    <string name="button_replace" translatable="false">Replace</string>
+    <string name="button_add_bs" translatable="false">Add BS</string>
+    <string name="button_pop_bs" translatable="false">Pop BS</string>
+    <string name="button_replace_bs" translatable="false">Replace BS</string>
+    <string name="button_show_dialog" translatable="false">Show dialog</string>
+    <string name="edittext_your_number" translatable="false">Enter your number.</string>
+    <string name="textview_simple_fragment" translatable="false">Simple fragment.</string>
+    <string name="textview_first_fragment" translatable="false">This is Fragment.</string>
+    <string name="textview_second_fragment" translatable="false">This is Fragment with use of DialogFragment.</string>
+    <string name="textview_third_fragment" translatable="false">This is ListFragment.</string>
+    <string name="textview_fragment_with_date" translatable="false">Fragment, %1$s</string>
+    <string name="no_fragments" translatable="false">There are no fragments.</string>
+    <string name="listview_item_position" translatable="false">Position: %1$s</string>
 
     <!-- StringArray for FragmentList -->
     <string-array name="Cars">
@@ -108,99 +108,103 @@
     </string-array>
 
     <!--IntentDataPassActivity strins-->
-    <string name="button_pass_parcelable_data">PARCELABLE</string>
-    <string name="button_pass_serializable_data">SERIALIZABLE</string>
-    <string name="radio_button_male">Male</string>
-    <string name="radio_button_female">Female</string>
-    <string name="edittext_age">Your age</string>
-    <string name="textview_data_passed">%1$s, you are %2$d years old %3$s.</string>
+    <string name="button_pass_parcelable_data" translatable="false">PARCELABLE</string>
+    <string name="button_pass_serializable_data" translatable="false">SERIALIZABLE</string>
+    <string name="radio_button_male" translatable="false">Male</string>
+    <string name="radio_button_female" translatable="false">Female</string>
+    <string name="edittext_age" translatable="false">Your age</string>
+    <string name="textview_data_passed" translatable="false">%1$s, you are %2$d years old %3$s.</string>
 
     <!--Registration fragments strings-->
-    <string name="enter_email">Email</string>
-    <string name="enter_password">Password</string>
-    <string name="reenter_password">Re-enter Password</string>
-    <string name="enter_nickname">Nickname</string>
-    <string name="wrong_email">This is not real email address.</string>
-    <string name="wrong_password">Passwords does not match.</string>
-    <string name="put_email">Enter your email address.</string>
-    <string name="put_password">Enter your password.</string>
-    <string name="put_nickname">Enter your nickname.</string>
+    <string name="enter_email" translatable="false">Email</string>
+    <string name="enter_password" translatable="false">Password</string>
+    <string name="reenter_password" translatable="false">Re-enter Password</string>
+    <string name="enter_nickname" translatable="false">Nickname</string>
+    <string name="wrong_email" translatable="false">This is not real email address.</string>
+    <string name="wrong_password" translatable="false">Passwords does not match.</string>
+    <string name="put_email" translatable="false">Enter your email address.</string>
+    <string name="put_password" translatable="false">Enter your password.</string>
+    <string name="put_nickname" translatable="false">Enter your nickname.</string>
 
     <!--SnackBarActivity strings-->
-    <string name="button_snackbar">SNACK</string>
-    <string name="tv_show_snackbar">Show basic snackbar.</string>
-    <string name="tv_show_snackbar_dismiss">Show snackbar with dismiss option.</string>
-    <string name="tv_show_snackbar_action">Show snackbar with action option.</string>
-    <string name="snackbar_simple">Simple snackbar</string>
-    <string name="snackbar_change_background">Background color changed.</string>
-    <string name="snackbar_dismiss">You clicked second button.</string>
+    <string name="button_snackbar" translatable="false">SNACK</string>
+    <string name="tv_show_snackbar" translatable="false">Show basic snackbar.</string>
+    <string name="tv_show_snackbar_dismiss" translatable="false">Show snackbar with dismiss option.</string>
+    <string name="tv_show_snackbar_action" translatable="false">Show snackbar with action option.</string>
+    <string name="snackbar_simple" translatable="false">Simple snackbar</string>
+    <string name="snackbar_change_background" translatable="false">Background color changed.</string>
+    <string name="snackbar_dismiss" translatable="false">You clicked second button.</string>
 
     <!--SpannableActivity strings-->
-    <string name="span_string_type_one">Bold, red, bold-o-red</string>
-    <string name="span_string_type_two">Check out this website</string>
-    <string name="span_string_type_three">TODO list:\neat \nsleep</string>
-    <string name="span_string_type_four">Look at my android</string>
+    <string name="span_string_type_one" translatable="false">Bold, red, bold-o-red</string>
+    <string name="span_string_type_two" translatable="false">Check out this website</string>
+    <string name="span_string_type_three" translatable="false">TODO list:\neat \nsleep</string>
+    <string name="span_string_type_four" translatable="false">Look at my android</string>
 
     <!--DialogActivity strings-->
-    <string name="simple_dialog_button">Simple dialog</string>
-    <string name="list_dialog_button">Dialog with list</string>
-    <string name="multiple_list_dialog_button">Dialog with multi-choice list</string>
-    <string name="custom_dialog_button">Custom dialog</string>
-    <string name="edittext_dialog_button">Dialog with EditText</string>
-    <string name="alert_give_money_title">Give money?</string>
-    <string name="alert_give_money_message">We are poor company. We want your help</string>
-    <string name="alert_list_item">Choose your favourite car brand.</string>
-    <string name="alert_multiple_list_item">Describe yourself.</string>
-    <string name="alert_edittext">Type your nickname.</string>
-    <string name="dialog_textview">This is custom dialog.\nThis is custom dialog.\nThis is custom dialog.</string>
+    <string name="simple_dialog_button" translatable="false">Simple dialog</string>
+    <string name="list_dialog_button" translatable="false">Dialog with list</string>
+    <string name="multiple_list_dialog_button" translatable="false">Dialog with multi-choice list</string>
+    <string name="custom_dialog_button" translatable="false">Custom dialog</string>
+    <string name="edittext_dialog_button" translatable="false">Dialog with EditText</string>
+    <string name="alert_give_money_title" translatable="false">Give money?</string>
+    <string name="alert_give_money_message" translatable="false">We are poor company. We want your help</string>
+    <string name="alert_list_item" translatable="false">Choose your favourite car brand.</string>
+    <string name="alert_multiple_list_item" translatable="false">Describe yourself.</string>
+    <string name="alert_edittext" translatable="false">Type your nickname.</string>
+    <string name="dialog_textview" translatable="false">This is custom dialog.\nThis is custom dialog.\nThis is custom dialog.</string>
 
     <!-- BottomNavigationActivity strings -->
-    <string name="fragment_first_nav">Frag1</string>
-    <string name="fragment_second_nav">Frag2</string>
-    <string name="fragment_third_nav">Frag3</string>
+    <string name="fragment_first_nav" translatable="false">Frag1</string>
+    <string name="fragment_second_nav" translatable="false">Frag2</string>
+    <string name="fragment_third_nav" translatable="false">Frag3</string>
 
     <!-- BottomSheetActivity strings -->
-    <string name="persistent_bottom_sheet">Persistent bottom sheet</string>
-    <string name="modal_bottom_sheet">Modal bottom sheet</string>
-    <string name="bottom_sheet_persistent_tv1">This is persistent Bottom Sheet</string>
-    <string name="bottom_sheet_persistent_tv2">Welcome to Android Showreel</string>
-    <string name="bottom_sheet_persistent_tv3">Join our community</string>
-    <string name="bottom_sheet_persistent_button">Join us</string>
-    <string name="bottom_sheet_modal_tv1">This is modal Bottom Sheet</string>
-    <string name="bottom_sheet_modal_tv2">Welcome to Android Showreel</string>
-    <string name="bottom_sheet_modal_tv3">Join our community</string>
-    <string name="bottom_sheet_modal_button">Join us</string>
+    <string name="persistent_bottom_sheet" translatable="false">Persistent bottom sheet</string>
+    <string name="modal_bottom_sheet" translatable="false">Modal bottom sheet</string>
+    <string name="bottom_sheet_persistent_tv1" translatable="false">This is persistent Bottom Sheet</string>
+    <string name="bottom_sheet_persistent_tv2" translatable="false">Welcome to Android Showreel</string>
+    <string name="bottom_sheet_persistent_tv3" translatable="false">Join our community</string>
+    <string name="bottom_sheet_persistent_button" translatable="false">Join us</string>
+    <string name="bottom_sheet_modal_tv1" translatable="false">This is modal Bottom Sheet</string>
+    <string name="bottom_sheet_modal_tv2" translatable="false">Welcome to Android Showreel</string>
+    <string name="bottom_sheet_modal_tv3" translatable="false">Join our community</string>
+    <string name="bottom_sheet_modal_button" translatable="false">Join us</string>
 
     <!-- AutoCompleteEditTextActivity strings -->
-    <string name="autocomplete_description_tv">TextView with autocomplete:</string>
-    <string name="choose_country_tv">Choose your country</string>
+    <string name="autocomplete_description_tv" translatable="false">TextView with autocomplete:</string>
+    <string name="choose_country_tv" translatable="false">Choose your country</string>
 
     <!-- TextInputLayoutActivity strings -->
-    <string name="username_tv">Username</string>
-    <string name="password_tv">Password</string>
-    <string name="login_button">Login</string>
-    <string name="no_account">No account yet?\nCreate one.</string>
+    <string name="username_tv" translatable="false">Username</string>
+    <string name="password_tv" translatable="false">Password</string>
+    <string name="login_button" translatable="false">Login</string>
+    <string name="no_account" translatable="false">No account yet?\nCreate one.</string>
 
     <!-- BitmapActivity strings -->
-    <string name="scale_up_button">Scale up</string>
-    <string name="scale_down_button">Scale down</string>
-    <string name="invert_colors_button">Invert colors</string>
-    <string name="make_grayscale_button">Make colorless</string>
-    <string name="reset_button">Reset</string>
+    <string name="scale_up_button" translatable="false">Scale up</string>
+    <string name="scale_down_button" translatable="false">Scale down</string>
+    <string name="invert_colors_button" translatable="false">Invert colors</string>
+    <string name="make_grayscale_button" translatable="false">Make colorless</string>
+    <string name="reset_button" translatable="false">Reset</string>
+
+    <!--MultiLanguageActivity strings -->
+    <string name="button_change_language">Change language</string>
+    <string name="hello_tv">Hello!</string>
 
     <!--Permissions-->
-    <string name="error_permission_rationale_camera_title">Camera permission</string>
-    <string name="error_permission_rationale_camera_description">We need your permission to open a camera - it is nessessary to scan a QR code.</string>
-    <string name="error_permission_rationale_camera_accept_button">Open settings</string>
+    <string name="error_permission_rationale_camera_title" translatable="false">Camera permission</string>
+    <string name="error_permission_rationale_camera_description" translatable="false">We need your permission to open a camera - it is nessessary to scan a QR code.</string>
+    <string name="error_permission_rationale_camera_accept_button" translatable="false">Open settings</string>
 
     <!--Dialogs-->
-    <string name="cancel">Cancel</string>
-    <string name="ok">Ok</string>
-    <string name="dismiss">Dismiss</string>
-    <string name="undo">Undo</string>
-    <string name="agree">Agree</string>
-    <string name="disagree">Disagree</string>
-    <string name="click">Click</string>
+    <string name="cancel" translatable="false">Cancel</string>
+    <string name="ok" translatable="false">Ok</string>
+    <string name="dismiss" translatable="false">Dismiss</string>
+    <string name="undo" translatable="false">Undo</string>
+    <string name="agree" translatable="false">Agree</string>
+    <string name="disagree" translatable="false">Disagree</string>
+    <string name="click" translatable="false">Click</string>
 
 
 </resources>

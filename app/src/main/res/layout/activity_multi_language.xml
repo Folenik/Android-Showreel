@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_bot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/hello_tv"
+        style="@style/ShowreelLabel.Header.Huge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_tv"
+        app:layout_constraintBottom_toTopOf="@id/guideline_horizontal_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_name"
+        android:layout_width="@dimen/wrap_constraint"
+        android:layout_height="wrap_content"
+        android:hint="@string/edittext_name"
+        app:layout_constraintBottom_toTopOf="@id/et_login"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical_right"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical_left"
+        app:layout_constraintTop_toBottomOf="@id/guideline_horizontal_top"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_login"
+        android:layout_width="@dimen/wrap_constraint"
+        android:layout_height="wrap_content"
+        android:hint="@string/edittext_login"
+        app:layout_constraintBottom_toTopOf="@id/et_password"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical_right"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical_left"
+        app:layout_constraintTop_toBottomOf="@id/et_name"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_password"
+        android:layout_width="@dimen/wrap_constraint"
+        android:layout_height="wrap_content"
+        android:hint="@string/edittext_password"
+        app:layout_constraintBottom_toTopOf="@id/et_retype_password"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical_right"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical_left"
+        app:layout_constraintTop_toBottomOf="@id/et_login"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_retype_password"
+        android:layout_width="@dimen/wrap_constraint"
+        android:layout_height="wrap_content"
+        android:hint="@string/edittext_retype_password"
+        app:layout_constraintBottom_toTopOf="@id/guideline_horizontal_bot"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical_right"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical_left"
+        app:layout_constraintTop_toBottomOf="@id/et_password"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_register"
+        android:onClick="registerAccount"
+        app:layout_constraintBottom_toTopOf="@id/button_change_language"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_retype_password" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_change_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing16"
+        android:text="@string/button_change_language"
+        android:onClick="changeLanguage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

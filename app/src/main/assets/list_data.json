@@ -198,7 +198,8 @@
     "id": 30,
     "name": "Multiple language app",
     "description": "Description about multiple language app.",
-    "isDone": "false"
+    "img": "https://apps.shopifycdn.com/listing_images/80001c849b3fe806015cea7fd3e711e5/icon/331918dcfeb604561afbc1ceab98000a.jpg",
+    "isDone": "true"
   },
   {
     "id": 31,
