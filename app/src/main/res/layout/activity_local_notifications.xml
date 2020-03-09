@@ -4,15 +4,51 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/m_textview"
-        style="@style/ShowreelLabel.Long"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/simple_notification_button"
+        android:layout_width="@dimen/wrap_constraint"
         android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="createAndShowSimpleNotification"
+        android:text="@string/button_simple_notification"
+        app:layout_constraintBottom_toTopOf="@id/custom_notification_button"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical_right"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical_left"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/custom_notification_button"
+        android:layout_width="@dimen/wrap_constraint"
+        android:layout_height="wrap_content"
+        android:onClick="createAndShowCustomNotification"
+        android:text="@string/button_custom_notification"
+        app:layout_constraintBottom_toTopOf="@id/action_notification_button"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical_right"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical_left"
+        app:layout_constraintTop_toBottomOf="@id/simple_notification_button" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/action_notification_button"
+        android:layout_width="@dimen/wrap_constraint"
+        android:layout_height="wrap_content"
+        android:onClick="createAndShowActionNotification"
+        android:text="@string/button_action_notification"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical_right"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical_left"
+        app:layout_constraintTop_toBottomOf="@id/custom_notification_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

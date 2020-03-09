@@ -20,4 +20,8 @@ public final class Const {
 
     public static final String WEBVIEW_PAGE_URL = "https://www.google.pl/";
 
+    public static final String NOTIFICATION_CHANNEL_1_ID = "channel1";
+    public static final String NOTIFICATION_CHANNEL_2_ID = "channel2";
+    public static final String NOTIFICATION_CHANNEL_3_ID = "channel3";
+
 }
