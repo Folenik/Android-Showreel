@@ -96,6 +96,9 @@
         <activity
             android:name=".activity.LocalNotificationsActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LivePermissionsActivity"
+            android:screenOrientation="portrait" />
         <receiver android:name=".util.NotificationReceiver"/>
     </application>
 </manifest>

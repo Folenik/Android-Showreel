@@ -128,7 +128,8 @@
     "id": 19,
     "name": "Live permissions",
     "description": "Description about Live permissions.",
-    "isDone": "false"
+    "img": "http://icons.iconarchive.com/icons/graphicloads/colorful-long-shadow/128/Check-3-icon.png",
+    "isDone": "true"
   },
   {
     "id": 20,
