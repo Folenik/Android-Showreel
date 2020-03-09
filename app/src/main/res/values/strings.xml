@@ -192,6 +192,11 @@
     <string name="button_change_language">Change language</string>
     <string name="hello_tv">Hello!</string>
 
+    <!--LocalNotificationsActivity strings-->
+    <string name="button_simple_notification" translatable="false">Show simple notification</string>
+    <string name="button_custom_notification" translatable="false">Show custom notification</string>
+    <string name="button_action_notification" translatable="false">Show action notification</string>
+
     <!--Permissions-->
     <string name="error_permission_rationale_camera_title" translatable="false">Camera permission</string>
     <string name="error_permission_rationale_camera_description" translatable="false">We need your permission to open a camera - it is nessessary to scan a QR code.</string>

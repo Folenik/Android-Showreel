@@ -22,6 +22,7 @@ import com.folen.androidshowreel.activity.FragmentsActivity;
 import com.folen.androidshowreel.activity.FragmentsTransactionActivity;
 import com.folen.androidshowreel.activity.IntentDataPassActivity;
 import com.folen.androidshowreel.activity.KotlinActivity;
+import com.folen.androidshowreel.activity.LocalNotificationsActivity;
 import com.folen.androidshowreel.activity.MultiLanguageActivity;
 import com.folen.androidshowreel.activity.QRCodeActivity;
 import com.folen.androidshowreel.activity.SharedPrefActivity;
@@ -112,6 +113,9 @@ public class IntentManager {
             case 21:
                 AutoCompleteEditTextActivity autoCompleteEditTextActivity = new AutoCompleteEditTextActivity();
                 return autoCompleteEditTextActivity.intent(activity);
+            case 23:
+                LocalNotificationsActivity localNotificationsActivity = new LocalNotificationsActivity();
+                return localNotificationsActivity.intent(activity);
             case 24:
                 WebViewActivity webViewActivity = new WebViewActivity();
                 return webViewActivity.intent(activity);
