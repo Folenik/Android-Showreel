@@ -82,7 +82,8 @@
     "id": 12,
     "name": "Basic Animations",
     "description": "Description about Animations.",
-    "isDone": "false"
+    "img": "https://koenig-media.raywenderlich.com/uploads/2016/09/IntroToAnimation-feature.png",
+    "isDone": "true"
   },
   {
     "id": 13,
