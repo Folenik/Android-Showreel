@@ -22,6 +22,7 @@ import com.folen.androidshowreel.activity.FragmentsActivity;
 import com.folen.androidshowreel.activity.FragmentsTransactionActivity;
 import com.folen.androidshowreel.activity.IntentDataPassActivity;
 import com.folen.androidshowreel.activity.KotlinActivity;
+import com.folen.androidshowreel.activity.LivePermissionsActivity;
 import com.folen.androidshowreel.activity.LocalNotificationsActivity;
 import com.folen.androidshowreel.activity.MultiLanguageActivity;
 import com.folen.androidshowreel.activity.QRCodeActivity;
@@ -110,6 +111,9 @@ public class IntentManager {
             case 17:
                 SnackBarActivity snackBarActivity = new SnackBarActivity();
                 return snackBarActivity.intent(activity);
+            case 19:
+                LivePermissionsActivity livePermissionsActivity = new LivePermissionsActivity();
+                return livePermissionsActivity.intent(activity);
             case 21:
                 AutoCompleteEditTextActivity autoCompleteEditTextActivity = new AutoCompleteEditTextActivity();
                 return autoCompleteEditTextActivity.intent(activity);
