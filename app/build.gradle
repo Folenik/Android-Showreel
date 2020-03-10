@@ -73,6 +73,7 @@ dependencies {
     implementation "com.google.android.gms:play-services:$libVersions.playServices"
     implementation "me.dm7.barcodescanner:zxing:$libVersions.zxingScanner"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$toolVersions.kotlinversion"
+    implementation "com.nabinbhandari.android:permissions:$libVersions.permissions"
 
     kapt "com.github.bumptech.glide:compiler:$libVersions.glide"
     kapt "com.android.databinding:compiler:$toolVersions.compilerversion"
