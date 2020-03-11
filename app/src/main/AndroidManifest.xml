@@ -104,6 +104,9 @@
         <activity
             android:name=".activity.LivePermissionsActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BasicAnimationsActivity"
+            android:screenOrientation="portrait" />
 
         <receiver android:name=".util.NotificationReceiver" />
     </application>

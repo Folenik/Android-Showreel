@@ -200,6 +200,16 @@
     <!--LivePermissionsActivity strings-->
     <string name="button_request_permissions" translatable="false">Start activity</string>
 
+    <!--BasicAnimationsActivity strings-->
+    <string name="button_bounce" translatable="false">Bounce</string>
+    <string name="button_rotate" translatable="false">Rotate</string>
+    <string name="button_fade_in" translatable="false">Fade in</string>
+    <string name="button_fade_out" translatable="false">Fade out</string>
+    <string name="button_zoom_in" translatable="false">Zoom in</string>
+    <string name="button_zoom_out" translatable="false">Zoom out</string>
+    <string name="button_slide_down" translatable="false">Slide down</string>
+    <string name="button_slide_up" translatable="false">Slide up</string>
+
     <!--Permissions-->
     <string name="error_permission_rationale_camera_title" translatable="false">Camera permission</string>
     <string name="error_permission_rationale_camera_description" translatable="false">We need your permission to open a camera - it is nessessary to scan a QR code.</string>

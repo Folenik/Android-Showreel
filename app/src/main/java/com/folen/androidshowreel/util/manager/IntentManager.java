@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 
 import com.folen.androidshowreel.R;
 import com.folen.androidshowreel.activity.AutoCompleteEditTextActivity;
+import com.folen.androidshowreel.activity.BasicAnimationsActivity;
 import com.folen.androidshowreel.activity.BitmapsActivity;
 import com.folen.androidshowreel.activity.BottomNavigationActivity;
 import com.folen.androidshowreel.activity.BottomSheetActivity;
@@ -99,6 +100,9 @@ public class IntentManager {
             case 9:
                 IntentDataPassActivity intentDataPassActivity = new IntentDataPassActivity();
                 return intentDataPassActivity.intent(activity);
+            case 12:
+                BasicAnimationsActivity basicAnimationsActivity = new BasicAnimationsActivity();
+                return basicAnimationsActivity.intent(activity);
             case 13:
                 FragmentsTransactionActivity fragmentsTransactionActivity = new FragmentsTransactionActivity();
                 return fragmentsTransactionActivity.intent(activity);
