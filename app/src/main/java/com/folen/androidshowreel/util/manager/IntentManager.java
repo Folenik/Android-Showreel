@@ -21,6 +21,7 @@ import com.folen.androidshowreel.activity.DataBindingActivity;
 import com.folen.androidshowreel.activity.DialogsActivity;
 import com.folen.androidshowreel.activity.FragmentsActivity;
 import com.folen.androidshowreel.activity.FragmentsTransactionActivity;
+import com.folen.androidshowreel.activity.GestureDetectorActivity;
 import com.folen.androidshowreel.activity.IntentDataPassActivity;
 import com.folen.androidshowreel.activity.KotlinActivity;
 import com.folen.androidshowreel.activity.LivePermissionsActivity;
@@ -100,6 +101,9 @@ public class IntentManager {
             case 9:
                 IntentDataPassActivity intentDataPassActivity = new IntentDataPassActivity();
                 return intentDataPassActivity.intent(activity);
+            case 11:
+                GestureDetectorActivity gestureDetectorActivity = new GestureDetectorActivity();
+                return gestureDetectorActivity.intent(activity);
             case 12:
                 BasicAnimationsActivity basicAnimationsActivity = new BasicAnimationsActivity();
                 return basicAnimationsActivity.intent(activity);

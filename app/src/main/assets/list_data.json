@@ -76,7 +76,8 @@
     "id": 11,
     "name": "Gesture detector",
     "description": "Description about Gesture detector.",
-    "isDone": "false"
+    "img": "https://en.proft.me/media/android/android_touch_event.png",
+    "isDone": "true"
   },
   {
     "id": 12,
