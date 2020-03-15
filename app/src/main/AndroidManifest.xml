@@ -110,6 +110,9 @@
         <activity
             android:name=".activity.GestureDetectorActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DeathToolsActivity"
+            android:screenOrientation="portrait" />
 
         <receiver android:name=".util.NotificationReceiver" />
     </application>

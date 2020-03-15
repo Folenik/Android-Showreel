@@ -24,4 +24,6 @@ public final class Const {
     public static final String NOTIFICATION_CHANNEL_2_ID = "channel2";
     public static final String NOTIFICATION_CHANNEL_3_ID = "channel3";
 
+    public static final String GESTURE_LOG = "Gesture: ";
+
 }

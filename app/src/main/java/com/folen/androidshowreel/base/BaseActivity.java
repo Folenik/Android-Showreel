@@ -5,7 +5,9 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-public abstract class BaseActivity extends AppCompatActivity {
+import com.squareup.seismic.ShakeDetector;
+
+public abstract class BaseActivity extends AppCompatActivity implements ShakeDetector.Listener {
 
     private AlertDialog alertDialog;
 
