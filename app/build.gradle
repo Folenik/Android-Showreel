@@ -57,7 +57,6 @@ android {
     dataBinding {
         enabled = true
     }
-
 }
 
 dependencies {
@@ -74,6 +73,7 @@ dependencies {
     implementation "me.dm7.barcodescanner:zxing:$libVersions.zxingScanner"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$toolVersions.kotlinversion"
     implementation "com.nabinbhandari.android:permissions:$libVersions.permissions"
+    implementation "com.squareup:seismic:$libVersions.seismic"
 
     kapt "com.github.bumptech.glide:compiler:$libVersions.glide"
     kapt "com.android.databinding:compiler:$toolVersions.compilerversion"

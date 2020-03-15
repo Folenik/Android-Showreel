@@ -210,6 +210,24 @@
     <string name="button_slide_down" translatable="false">Slide down</string>
     <string name="button_slide_up" translatable="false">Slide up</string>
 
+    <!--GestureDetectorActivity strings-->
+    <string name="gesture_action_down" translatable="false">Action down</string>
+    <string name="gesture_action_up" translatable="false">Action up</string>
+    <string name="gesture_action_cancel" translatable="false">Action cancel</string>
+    <string name="gesture_action_move" translatable="false">Action move</string>
+    <string name="gesture_action_outside" translatable="false">Action outside</string>
+    <string name="gesture_action_show_press" translatable="false">Action show press</string>
+    <string name="gesture_action_single_tap_up" translatable="false">Action single tap up</string>
+    <string name="gesture_action_fling" translatable="false">Action fling</string>
+    <string name="gesture_action_scroll" translatable="false">Action scroll</string>
+    <string name="gesture_action_long_press" translatable="false">Action long press</string>
+    <string name="gesture_action_double_tap" translatable="false">Action double tap</string>
+    <string name="gesture_action_single_tap_confirmed" translatable="false">Action single tap confirmed</string>
+    <string name="gesture_action_double_tap_event" translatable="false">Action double tap event</string>
+
+    <!--DeathToolsActivity strings-->
+    <string name="death_tool_tv" translatable="false">In build</string>
+
     <!--Permissions-->
     <string name="error_permission_rationale_camera_title" translatable="false">Camera permission</string>
     <string name="error_permission_rationale_camera_description" translatable="false">We need your permission to open a camera - it is nessessary to scan a QR code.</string>
