@@ -142,7 +142,6 @@ public class MainActivity extends BaseActivity {
     }
 
     private void setupRecyclerView() {
-
         recyclerView = findViewById(R.id.recycler_view);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -193,5 +192,4 @@ public class MainActivity extends BaseActivity {
             itemAdapter.add(new FeatureListItem(feature));
         }
     }
-
 }

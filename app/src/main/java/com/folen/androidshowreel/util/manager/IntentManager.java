@@ -32,6 +32,7 @@ import com.folen.androidshowreel.activity.SharedPrefActivity;
 import com.folen.androidshowreel.activity.SlidingRegistrationFormActivity;
 import com.folen.androidshowreel.activity.SnackBarActivity;
 import com.folen.androidshowreel.activity.SpannableActivity;
+import com.folen.androidshowreel.activity.TakePhotoActivity;
 import com.folen.androidshowreel.activity.TextInputLayoutActivity;
 import com.folen.androidshowreel.activity.ViewPagerIndicatorActivity;
 import com.folen.androidshowreel.activity.WebViewActivity;
@@ -76,8 +77,8 @@ public class IntentManager {
                 //TODO
                 Toast.makeText(activity, activity.getString(R.string.error_not_implemented), Toast.LENGTH_SHORT).show();
             case 7:
-                //TODO
-                Toast.makeText(activity, activity.getString(R.string.error_not_implemented), Toast.LENGTH_SHORT).show();
+                TakePhotoActivity takePhotoActivity = new TakePhotoActivity();
+                return takePhotoActivity.intent(activity);
             case 8:
                 if (PermissionManager.isGranted(activity, Manifest.permission.CAMERA)) {
                     return QRCodeActivity.intent(activity);

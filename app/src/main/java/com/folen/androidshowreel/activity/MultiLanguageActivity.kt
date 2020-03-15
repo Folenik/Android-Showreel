@@ -110,7 +110,7 @@ class MultiLanguageActivity : AppCompatActivity() {
         builder.show()
     }
 
-    @SuppressWarnings("deprecation")
+    @SuppressWarnings("DEPRECATION")
     private fun setLanguage(language: String) {
         val locale = Locale(language)
         Locale.setDefault(locale)

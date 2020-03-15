@@ -14,7 +14,7 @@ import com.folen.androidshowreel.util.Const.GESTURE_LOG
 import com.squareup.seismic.ShakeDetector
 
 
-class GestureDetectorActivity : BaseActivity(), GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListener {
+class GestureDetectorActivity : BaseActivity(), GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListener, ShakeDetector.Listener {
 
     private lateinit var gDetector: GestureDetectorCompat
     private lateinit var sDetector: ShakeDetector

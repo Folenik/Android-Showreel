@@ -12,7 +12,6 @@ import kotlinx.android.synthetic.main.activity_fragments_transactions.*
 
 
 class FragmentsTransactionActivity : BaseActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fragments_transactions)

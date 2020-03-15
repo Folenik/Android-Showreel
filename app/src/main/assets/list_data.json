@@ -50,7 +50,8 @@
     "id": 7,
     "name": "Taking photos",
     "description": "Description about taking photos.",
-    "isDone": "false"
+    "img": "http://www.myiconfinder.com/uploads/iconsets/256-256-e434e7046976e24f737f953fa523b86a.png",
+    "isDone": "true"
   },
   {
     "id": 8,

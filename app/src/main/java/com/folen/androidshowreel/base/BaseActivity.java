@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.squareup.seismic.ShakeDetector;
 
-public abstract class BaseActivity extends AppCompatActivity implements ShakeDetector.Listener {
+public abstract class BaseActivity extends AppCompatActivity {
 
     private AlertDialog alertDialog;
 

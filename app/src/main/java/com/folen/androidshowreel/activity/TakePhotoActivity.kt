@@ -3,17 +3,16 @@ package com.folen.androidshowreel.activity
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.folen.androidshowreel.R
-import com.folen.androidshowreel.base.BaseActivity
 
-class FragmentsActivity : BaseActivity() {
-
+class TakePhotoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_fragments)
+        setContentView(R.layout.activity_take_photo)
     }
 
     fun intent(context: Context): Intent {
-        return Intent(context, FragmentsActivity::class.java)
+        return Intent(context, TakePhotoActivity::class.java)
     }
 }
