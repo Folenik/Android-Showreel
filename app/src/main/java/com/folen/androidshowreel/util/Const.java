@@ -26,4 +26,7 @@ public final class Const {
 
     public static final String GESTURE_LOG = "Gesture: ";
 
+    public static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 1234;
+    public static final String APP_TAG = "2137";
+
 }
