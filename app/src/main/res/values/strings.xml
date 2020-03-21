@@ -233,6 +233,9 @@
     <string name="picture_taken" translatable="false">Picture stored in: $1%s</string>
     <string name="picture_not_taken" translatable="false">Picture was not taken.</string>
 
+    <!--LoadImageActivity strings-->
+    <string name="load_image_button" translatable="false">Load</string>
+    <string name="error_permission_rationale_description_two" translatable="false">We need your permission to read and write external memory - it is neccessary to pick photos from gallery.</string>
 
     <!--Permissions-->
     <string name="error_permission_rationale_camera_title" translatable="false">Camera permission</string>

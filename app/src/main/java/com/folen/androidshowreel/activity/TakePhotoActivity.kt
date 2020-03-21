@@ -48,7 +48,7 @@ class TakePhotoActivity : AppCompatActivity() {
                 val builder = AlertDialog.Builder(this@TakePhotoActivity)
                 with(builder) {
                     setTitle(getString(R.string.error_permission_rationale_title))
-                    setMessage(getString(R.string.error_permission_rationale_description))
+                    setMessage(getString(R.string.error_permission_rationale_description_two))
                     setCancelable(false)
                     setPositiveButton(getString(R.string.error_permission_rationale_accept_button)) { _, _ ->
                         finish()
