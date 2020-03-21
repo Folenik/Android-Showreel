@@ -25,6 +25,7 @@ import com.folen.androidshowreel.activity.GestureDetectorActivity;
 import com.folen.androidshowreel.activity.IntentDataPassActivity;
 import com.folen.androidshowreel.activity.KotlinActivity;
 import com.folen.androidshowreel.activity.LivePermissionsActivity;
+import com.folen.androidshowreel.activity.LoadImageActivity;
 import com.folen.androidshowreel.activity.LocalNotificationsActivity;
 import com.folen.androidshowreel.activity.MultiLanguageActivity;
 import com.folen.androidshowreel.activity.QRCodeActivity;
@@ -102,6 +103,9 @@ public class IntentManager {
             case 9:
                 IntentDataPassActivity intentDataPassActivity = new IntentDataPassActivity();
                 return intentDataPassActivity.intent(activity);
+            case 10:
+                LoadImageActivity loadImageActivity = new LoadImageActivity();
+                return loadImageActivity.intent(activity);
             case 11:
                 GestureDetectorActivity gestureDetectorActivity = new GestureDetectorActivity();
                 return gestureDetectorActivity.intent(activity);
