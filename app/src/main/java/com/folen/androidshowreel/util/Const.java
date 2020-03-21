@@ -29,4 +29,6 @@ public final class Const {
     public static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 1234;
     public static final String APP_TAG = "2137";
 
+    public static final int GET_PHOTO_REQUEST_CODE = 4321;
+
 }

@@ -71,7 +71,8 @@
     "id": 10,
     "name": "Loading image from gallery",
     "description": "Description about Loading image from gallery.",
-    "isDone": "false"
+    "img": "http://icons.iconarchive.com/icons/wwalczyszyn/android-style/256/Gallery-icon.png",
+    "isDone": "true"
   },
   {
     "id": 11,

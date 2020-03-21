@@ -117,6 +117,9 @@
         <activity
             android:name=".activity.TakePhotoActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoadImageActivity"
+            android:screenOrientation="portrait" />
 
         <receiver android:name=".util.NotificationReceiver" />
 
