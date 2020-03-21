@@ -228,10 +228,21 @@
     <!--DeathToolsActivity strings-->
     <string name="death_tool_tv" translatable="false">In build</string>
 
+    <!--TakePhotoActivity strings-->
+    <string name="error_failed_directory" translatable="false">Failed to create directory.</string>
+    <string name="picture_taken" translatable="false">Picture stored in: $1%s</string>
+    <string name="picture_not_taken" translatable="false">Picture was not taken.</string>
+
+
     <!--Permissions-->
     <string name="error_permission_rationale_camera_title" translatable="false">Camera permission</string>
     <string name="error_permission_rationale_camera_description" translatable="false">We need your permission to open a camera - it is nessessary to scan a QR code.</string>
     <string name="error_permission_rationale_camera_accept_button" translatable="false">Open settings</string>
+    <string name="error_permission_rationale_camera_description_two" translatable="false">We need your permission to open a camera - it is nessessary to take photos.</string>
+    <string name="error_permission_rationale_title" translatable="false">Permissions</string>
+    <string name="error_permission_rationale_description" translatable="false">We need your permission to open a camera and write external memory - it is neccessary to take photos.</string>
+    <string name="error_permission_rationale_accept_button" translatable="false">I GET IT</string>
+
 
     <!--Dialogs-->
     <string name="cancel" translatable="false">Cancel</string>
