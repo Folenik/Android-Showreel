@@ -120,6 +120,9 @@
         <activity
             android:name=".activity.LoadImageActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ComplexViewActivity"
+            android:screenOrientation="portrait" />
 
         <receiver android:name=".util.NotificationReceiver" />
 
