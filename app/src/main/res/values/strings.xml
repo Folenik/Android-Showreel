@@ -246,6 +246,9 @@
     <string name="error_permission_rationale_description" translatable="false">We need your permission to open a camera and write external memory - it is neccessary to take photos.</string>
     <string name="error_permission_rationale_accept_button" translatable="false">I GET IT</string>
 
+    <!--CustomView strings-->
+    <string name="custom_string_one" translatable="false">Custom title 1</string>
+    <string name="custom_string_two" translatable="false">Custom title 2</string>
 
     <!--Dialogs-->
     <string name="cancel" translatable="false">Cancel</string>

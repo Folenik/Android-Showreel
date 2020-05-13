@@ -14,9 +14,9 @@ Date:   Fri Feb 28 15:18:02 2020 +0100
 [32m+[m[32mimport android.content.Context.MODE_PRIVATE[m
 [32m+[m[32mimport android.content.SharedPreferences[m
  import android.os.Bundle[m
- import android.view.LayoutInflater[m
- import android.view.View[m
- import android.view.ViewGroup[m
+ import android.com.folen.androidshowreel.view.LayoutInflater[m
+ import android.com.folen.androidshowreel.view.View[m
+ import android.com.folen.androidshowreel.view.ViewGroup[m
 [32m+[m[32mimport android.widget.Toast[m
 [32m+[m[32mimport android.widget.Toast.LENGTH_LONG[m
  import com.folen.androidshowreel.R[m
@@ -26,7 +26,7 @@ Date:   Fri Feb 28 15:18:02 2020 +0100
  [m
  [m
 [36m@@ -20,7 +25,23 @@[m [mclass EnterEmailFragment : CustomFragmentWithInterface() {[m
-         super.onViewCreated(view, savedInstanceState)[m
+         super.onViewCreated(com.folen.androidshowreel.view, savedInstanceState)[m
  [m
          next_fragment_arrow.setOnClickListener {[m
 [32m+[m[32m            checkIfEmailIsProper()[m
@@ -60,9 +60,9 @@ Date:   Fri Feb 28 15:18:02 2020 +0100
 [32m+[m[32mimport android.content.Context[m
 [32m+[m[32mimport android.content.SharedPreferences[m
  import android.os.Bundle[m
- import android.view.LayoutInflater[m
- import android.view.View[m
- import android.view.ViewGroup[m
+ import android.com.folen.androidshowreel.view.LayoutInflater[m
+ import android.com.folen.androidshowreel.view.View[m
+ import android.com.folen.androidshowreel.view.ViewGroup[m
 [32m+[m[32mimport android.widget.Toast[m
  import androidx.fragment.app.Fragment[m
  import com.folen.androidshowreel.R[m
@@ -76,7 +76,7 @@ Date:   Fri Feb 28 15:18:02 2020 +0100
  [m
  class EnterNicknameFragment : CustomFragmentWithInterface() {[m
 [36m@@ -21,10 +26,18 @@[m [mclass EnterNicknameFragment : CustomFragmentWithInterface() {[m
-         super.onViewCreated(view, savedInstanceState)[m
+         super.onViewCreated(com.folen.androidshowreel.view, savedInstanceState)[m
  [m
          next_fragment_arrow.setOnClickListener {[m
 [31m-            mOnButtonClickListener.onButtonClicked()[m
@@ -109,9 +109,9 @@ Date:   Fri Feb 28 15:18:02 2020 +0100
 [32m+[m[32mimport android.content.Context[m
 [32m+[m[32mimport android.content.SharedPreferences[m
  import android.os.Bundle[m
- import android.view.LayoutInflater[m
- import android.view.View[m
- import android.view.ViewGroup[m
+ import android.com.folen.androidshowreel.view.LayoutInflater[m
+ import android.com.folen.androidshowreel.view.View[m
+ import android.com.folen.androidshowreel.view.ViewGroup[m
 [31m-import androidx.fragment.app.Fragment[m
 [32m+[m[32mimport android.widget.Toast[m
  import com.folen.androidshowreel.R[m
@@ -124,8 +124,8 @@ Date:   Fri Feb 28 15:18:02 2020 +0100
  class EnterPasswordFragment : CustomFragmentWithInterface() {[m
      override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {[m
 [36m@@ -18,11 +21,24 @@[m [mclass EnterPasswordFragment : CustomFragmentWithInterface() {[m
-     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {[m
-         super.onViewCreated(view, savedInstanceState)[m
+     override fun onViewCreated(com.folen.androidshowreel.view: View, savedInstanceState: Bundle?) {[m
+         super.onViewCreated(com.folen.androidshowreel.view, savedInstanceState)[m
  [m
 [31m-[m
          next_fragment_arrow.setOnClickListener {[m

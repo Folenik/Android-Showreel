@@ -15,6 +15,7 @@ import com.folen.androidshowreel.activity.BasicAnimationsActivity;
 import com.folen.androidshowreel.activity.BitmapsActivity;
 import com.folen.androidshowreel.activity.BottomNavigationActivity;
 import com.folen.androidshowreel.activity.BottomSheetActivity;
+import com.folen.androidshowreel.activity.ComplexViewActivity;
 import com.folen.androidshowreel.activity.ConfigurationChangesActivity;
 import com.folen.androidshowreel.activity.ConstraintLayoutActivity;
 import com.folen.androidshowreel.activity.DataBindingActivity;
@@ -139,6 +140,9 @@ public class IntentManager {
             case 25:
                 TextInputLayoutActivity textInputLayoutActivity = new TextInputLayoutActivity();
                 return textInputLayoutActivity.intent(activity);
+            case 27:
+                ComplexViewActivity complexViewActivity = new ComplexViewActivity();
+                return complexViewActivity.intent(activity);
             case 29:
                 SpannableActivity spannableActivity = new SpannableActivity();
                 return spannableActivity.intent(activity);

@@ -185,7 +185,8 @@
     "id": 27,
     "name": "Complex view with merge tag",
     "description": "Description about Complex view with merge tag.",
-    "isDone": "false"
+    "img": "https://www.basilur.pl/wp-content/uploads/2017/10/Question-mark-blackandwhite.png",
+    "isDone": "true"
   },
   {
     "id": 28,
