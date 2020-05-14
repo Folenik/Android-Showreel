@@ -152,7 +152,8 @@
     "id": 22,
     "name": "Broadcast Receiver",
     "description": "Description about Broadcast Receiver.",
-    "isDone": "false"
+    "img": "https://www.basilur.pl/wp-content/uploads/2017/10/Question-mark-blackandwhite.png",
+    "isDone": "true"
   },
   {
     "id": 23,

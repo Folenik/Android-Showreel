@@ -123,6 +123,9 @@
         <activity
             android:name=".activity.ComplexViewActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BroadcastReceiverActivity"
+            android:screenOrientation="portrait" />
 
         <receiver android:name=".util.NotificationReceiver" />
 
