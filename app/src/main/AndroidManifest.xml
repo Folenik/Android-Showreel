@@ -127,6 +127,9 @@
         <activity
             android:name=".activity.BroadcastReceiverActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ServicesActivity"
+            android:screenOrientation="portrait" />
 
         <receiver android:name=".util.NotificationReceiver" />
 
