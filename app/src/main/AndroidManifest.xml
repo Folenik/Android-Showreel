@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.folen.androidshowreel">
 
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
@@ -122,6 +123,9 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".activity.ComplexViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BroadcastReceiverActivity"
             android:screenOrientation="portrait" />
 
         <receiver android:name=".util.NotificationReceiver" />

@@ -250,6 +250,9 @@
     <string name="custom_string_one" translatable="false">Custom title 1</string>
     <string name="custom_string_two" translatable="false">Custom title 2</string>
 
+    <!-- BroadcastReceiverActivity strings-->
+    <string name="airplane_mode" translatable="false">Airplane mode changed.</string>
+
     <!--Dialogs-->
     <string name="cancel" translatable="false">Cancel</string>
     <string name="ok" translatable="false">Ok</string>

@@ -15,6 +15,7 @@ import com.folen.androidshowreel.activity.BasicAnimationsActivity;
 import com.folen.androidshowreel.activity.BitmapsActivity;
 import com.folen.androidshowreel.activity.BottomNavigationActivity;
 import com.folen.androidshowreel.activity.BottomSheetActivity;
+import com.folen.androidshowreel.activity.BroadcastReceiverActivity;
 import com.folen.androidshowreel.activity.ComplexViewActivity;
 import com.folen.androidshowreel.activity.ConfigurationChangesActivity;
 import com.folen.androidshowreel.activity.ConstraintLayoutActivity;
@@ -131,6 +132,9 @@ public class IntentManager {
             case 21:
                 AutoCompleteEditTextActivity autoCompleteEditTextActivity = new AutoCompleteEditTextActivity();
                 return autoCompleteEditTextActivity.intent(activity);
+            case 22:
+                BroadcastReceiverActivity broadcastReceiverActivity = new BroadcastReceiverActivity();
+                return broadcastReceiverActivity.intent(activity);
             case 23:
                 LocalNotificationsActivity localNotificationsActivity = new LocalNotificationsActivity();
                 return localNotificationsActivity.intent(activity);
