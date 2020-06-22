@@ -253,6 +253,10 @@
     <!-- BroadcastReceiverActivity strings-->
     <string name="airplane_mode" translatable="false">Airplane mode changed.</string>
 
+    <!-- ServicesActivity strings-->
+    <string name="start_service" translatable="false">Start service</string>
+    <string name="stop_service" translatable="false">Stop service</string>
+
     <!--Dialogs-->
     <string name="cancel" translatable="false">Cancel</string>
     <string name="ok" translatable="false">Ok</string>
