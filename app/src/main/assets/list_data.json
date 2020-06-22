@@ -220,7 +220,8 @@
     "id": 32,
     "name": "Services",
     "description": "Description about Services.",
-    "isDone": "false"
+    "img": "http://www.4androidapk.com/data/programs/images/carrier-services_33955.png",
+    "isDone": "true"
   },
   {
     "id": 33,

@@ -31,6 +31,7 @@ import com.folen.androidshowreel.activity.LoadImageActivity;
 import com.folen.androidshowreel.activity.LocalNotificationsActivity;
 import com.folen.androidshowreel.activity.MultiLanguageActivity;
 import com.folen.androidshowreel.activity.QRCodeActivity;
+import com.folen.androidshowreel.activity.ServicesActivity;
 import com.folen.androidshowreel.activity.SharedPrefActivity;
 import com.folen.androidshowreel.activity.SlidingRegistrationFormActivity;
 import com.folen.androidshowreel.activity.SnackBarActivity;
@@ -156,6 +157,9 @@ public class IntentManager {
             case 31:
                 SharedPrefActivity sharedPrefActivity = new SharedPrefActivity();
                 return sharedPrefActivity.intent(activity);
+            case 32:
+                ServicesActivity servicesActivity = new ServicesActivity();
+                return servicesActivity.intent(activity);
             case 33:
                 KotlinActivity kotlinActivity = new KotlinActivity();
                 return kotlinActivity.intent(activity);
