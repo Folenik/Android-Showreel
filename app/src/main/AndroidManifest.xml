@@ -130,6 +130,9 @@
         <activity
             android:name=".activity.ServicesActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MotionSensorActivity"
+            android:screenOrientation="portrait" />
 
         <receiver android:name=".util.NotificationReceiver" />
 
