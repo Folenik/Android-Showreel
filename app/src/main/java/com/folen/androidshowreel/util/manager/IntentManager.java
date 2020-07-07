@@ -29,6 +29,7 @@ import com.folen.androidshowreel.activity.KotlinActivity;
 import com.folen.androidshowreel.activity.LivePermissionsActivity;
 import com.folen.androidshowreel.activity.LoadImageActivity;
 import com.folen.androidshowreel.activity.LocalNotificationsActivity;
+import com.folen.androidshowreel.activity.MotionSensorActivity;
 import com.folen.androidshowreel.activity.MultiLanguageActivity;
 import com.folen.androidshowreel.activity.QRCodeActivity;
 import com.folen.androidshowreel.activity.ServicesActivity;
@@ -166,6 +167,9 @@ public class IntentManager {
             case 34:
                 ConfigurationChangesActivity configurationChangesActivity = new ConfigurationChangesActivity();
                 return configurationChangesActivity.intent(activity);
+            case 35:
+                MotionSensorActivity motionSensorActivity = new MotionSensorActivity();
+                return motionSensorActivity.intent(activity);
             case 36:
                 BitmapsActivity bitmapsActivity = new BitmapsActivity();
                 return bitmapsActivity.intent(activity);

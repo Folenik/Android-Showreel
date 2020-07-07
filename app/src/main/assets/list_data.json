@@ -241,7 +241,8 @@
     "id": 35,
     "name": "Motion sensors",
     "description": "Description about Motion sensors.",
-    "isDone": "false"
+    "img": "https://www.basilur.pl/wp-content/uploads/2017/10/Question-mark-blackandwhite.png",
+    "isDone": "true"
   },
   {
     "id": 36,

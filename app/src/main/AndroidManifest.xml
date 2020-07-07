@@ -12,6 +12,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION"/>
 
     <application
         android:name=".ShowreelApp"
@@ -23,7 +24,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Showreel"
-        tools:ignore="GoogleAppIndexingWarning"
+        tools:ignore="GoogleAppIndexingWarning,ManifestResource"
         tools:replace="android:appComponentFactory"
         tools:targetApi="p">
         <activity
@@ -129,6 +130,9 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".activity.ServicesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MotionSensorActivity"
             android:screenOrientation="portrait" />
 
         <receiver android:name=".util.NotificationReceiver" />
