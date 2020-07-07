@@ -257,6 +257,15 @@
     <string name="start_service" translatable="false">Start service</string>
     <string name="stop_service" translatable="false">Stop service</string>
 
+    <!-- MotionSensorActivity strings-->
+    <string name="choose_sensor" translatable="false">Choose your sensor</string>
+    <string name="sensor_accelerometer" translatable="false">Accelerometer</string>
+    <string name="sensor_gyroscope" translatable="false">Gyroscope</string>
+    <string name="sensor_acceleration" translatable="false">Acceleration</string>
+    <string name="sensor_rotation_vector" translatable="false">Rotation vector</string>
+    <string name="sensor_step_counter" translatable="false">Step counter</string>
+    <string name="sensor_no_sensor" translatable="false">there\'s no such sensor</string>
+
     <!--Dialogs-->
     <string name="cancel" translatable="false">Cancel</string>
     <string name="ok" translatable="false">Ok</string>
