@@ -43,4 +43,5 @@ Simple tasks developed within the application:
 Left to do:
 - Rx streams
 - Viewmodel
+- Dependency injection
 - Simple REST API with RestClient
